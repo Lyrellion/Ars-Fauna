@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "jagged_peaks",
+    "snowy_slopes",
+    "stony_peaks",
+    "windswept_hills"
+  ],
+  "spawners": {
+    "type": "ars_fauna:cloudbuncle",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

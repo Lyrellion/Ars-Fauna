@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.CAVE_AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.beacon.power_select"
+    },
+    "igniteFire": false,
+    "power": 0.75,
+    "damage": 1.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsPlayer": {
+      "name": "EyebuncleBeam"
+    },
+    "onFlyingTick": {
+      "name": "LaserBeamProjectileWhileProjectileFlyingTick"
+    }
+  }
+}

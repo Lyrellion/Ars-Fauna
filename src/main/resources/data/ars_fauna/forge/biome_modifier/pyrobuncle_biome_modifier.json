@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "badlands",
+    "desert",
+    "eroded_badlands",
+    "savanna",
+    "savanna_plateau"
+  ],
+  "spawners": {
+    "type": "ars_fauna:pyrobuncle",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

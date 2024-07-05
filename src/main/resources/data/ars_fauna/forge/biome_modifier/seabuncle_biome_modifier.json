@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "deep_lukewarm_ocean",
+    "deep_ocean",
+    "lukewarm_ocean",
+    "ocean",
+    "river",
+    "warm_ocean"
+  ],
+  "spawners": {
+    "type": "ars_fauna:seabuncle",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

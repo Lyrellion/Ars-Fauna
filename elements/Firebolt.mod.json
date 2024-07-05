@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.FIRE_CHARGE"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.ghast.shoot"
+    },
+    "igniteFire": true,
+    "power": 1.0,
+    "damage": 0.2,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

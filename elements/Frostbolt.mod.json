@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.SNOWBALL"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.2,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsPlayer": {
+      "name": "FrostboltProjectileHitsPlayer"
+    }
+  }
+}
