@@ -47,7 +47,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.arsfauna.procedures.UndergroundDwellerSpawnRuleProcedure;
+import net.mcreator.arsfauna.procedures.DeepDwellerSpawnRuleProcedure;
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 import javax.annotation.Nullable;
@@ -255,7 +255,7 @@ public class EyebuncleEntity extends Monster implements RangedAttackMob, GeoEnti
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return UndergroundDwellerSpawnRuleProcedure.execute(world, x, y, z);
+			return DeepDwellerSpawnRuleProcedure.execute(world, x, y, z);
 		});
 	}
 

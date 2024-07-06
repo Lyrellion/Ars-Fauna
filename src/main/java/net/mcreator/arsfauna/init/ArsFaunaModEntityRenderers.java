@@ -23,6 +23,7 @@ import net.mcreator.arsfauna.client.renderer.SeabuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SculkbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SandbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.PyrobuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.IllusibuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.GoobuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.GiantCarnivorousStarbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.FrostbuncleRenderer;
@@ -64,5 +65,6 @@ public class ArsFaunaModEntityRenderers {
 		event.registerEntityRenderer(ArsFaunaModEntities.SONGBUNCLE.get(), SongbuncleRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.CHEFBUNCLE.get(), ChefbuncleRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.TENTABUNCLE.get(), TentabuncleRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.ILLUSIBUNCLE.get(), IllusibuncleRenderer::new);
 	}
 }

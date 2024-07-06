@@ -16,6 +16,7 @@ import net.mcreator.arsfauna.entity.SeabuncleEntity;
 import net.mcreator.arsfauna.entity.SculkbuncleEntity;
 import net.mcreator.arsfauna.entity.SandbuncleEntity;
 import net.mcreator.arsfauna.entity.PyrobuncleEntity;
+import net.mcreator.arsfauna.entity.IllusibuncleEntity;
 import net.mcreator.arsfauna.entity.GoobuncleEntity;
 import net.mcreator.arsfauna.entity.GiantCarnivorousStarbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostbuncleEntity;
@@ -172,6 +173,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof TentabuncleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof IllusibuncleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -1345,6 +1345,23 @@
           "src/main/java/net/mcreator/arsfauna/entity/model/TentabuncleModel.java"
         ]
       }
+    },
+    {
+      "name": "Illusibuncle",
+      "type": "animatedentity",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illusibuncle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ars_fauna/models/item/illusibuncle_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/IllusibuncleEntity.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/illusibuncle_biome_modifier.json",
+          "src/main/java/net/mcreator/arsfauna/client/renderer/IllusibuncleRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/model/IllusibuncleModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1375,12 +1392,14 @@
       "entity.ars_fauna.goobuncle": "Goobuncle",
       "item.ars_fauna.giant_carnivorous_starbuncle_spawn_egg": "Giant Carnivorous Starbuncle Spawn Egg",
       "entity.ars_fauna.pyrobuncle": "Pyrobuncle",
+      "entity.ars_fauna.illusibuncle": "Illusibuncle",
       "item.ars_fauna.chefbuncle_spawn_egg": "Chefbuncle Spawn Egg",
       "entity.ars_fauna.giant_carnivorous_starbuncle": "Giant Carnivorous Starbuncle",
       "entity.ars_fauna.songbuncle": "Songbuncle",
       "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
       "item.ars_fauna.tentabuncle_spawn_egg": "Tentabuncle Spawn Egg",
       "item.ars_fauna.sandbuncle_spawn_egg": "Sandbuncle Spawn Egg",
+      "item.ars_fauna.illusibuncle_spawn_egg": "Illusibuncle Spawn Egg",
       "item.ars_fauna.starbuncle_swarm_spawn_egg": "Starbuncle Swarm Spawn Egg",
       "item.ars_fauna.shellbuncle_spawn_egg": "Shellbuncle Spawn Egg",
       "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",

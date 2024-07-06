@@ -31,6 +31,7 @@ import net.mcreator.arsfauna.entity.SculkTriggerEntity;
 import net.mcreator.arsfauna.entity.SandbuncleEntity;
 import net.mcreator.arsfauna.entity.PyrobuncleEntity;
 import net.mcreator.arsfauna.entity.LaserBeamProjectileEntity;
+import net.mcreator.arsfauna.entity.IllusibuncleEntity;
 import net.mcreator.arsfauna.entity.GoobuncleEntity;
 import net.mcreator.arsfauna.entity.GiantCarnivorousStarbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostbuncleEntity;
@@ -137,6 +138,10 @@ public class ArsFaunaModEntities {
 			EntityType.Builder.<TentabuncleEntity>of(TentabuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TentabuncleEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IllusibuncleEntity>> ILLUSIBUNCLE = register("illusibuncle",
+			EntityType.Builder.<IllusibuncleEntity>of(IllusibuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IllusibuncleEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -166,6 +171,7 @@ public class ArsFaunaModEntities {
 			SongbuncleEntity.init();
 			ChefbuncleEntity.init();
 			TentabuncleEntity.init();
+			IllusibuncleEntity.init();
 		});
 	}
 
@@ -192,5 +198,6 @@ public class ArsFaunaModEntities {
 		event.put(SONGBUNCLE.get(), SongbuncleEntity.createAttributes().build());
 		event.put(CHEFBUNCLE.get(), ChefbuncleEntity.createAttributes().build());
 		event.put(TENTABUNCLE.get(), TentabuncleEntity.createAttributes().build());
+		event.put(ILLUSIBUNCLE.get(), IllusibuncleEntity.createAttributes().build());
 	}
 }

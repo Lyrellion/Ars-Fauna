@@ -37,6 +37,7 @@ public class ArsFaunaModItems {
 	public static final RegistryObject<Item> SONGBUNCLE_SPAWN_EGG = REGISTRY.register("songbuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.SONGBUNCLE, -1566, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> CHEFBUNCLE_SPAWN_EGG = REGISTRY.register("chefbuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.CHEFBUNCLE, -65082, -1, new Item.Properties()));
 	public static final RegistryObject<Item> TENTABUNCLE_SPAWN_EGG = REGISTRY.register("tentabuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.TENTABUNCLE, -10092442, -16777165, new Item.Properties()));
+	public static final RegistryObject<Item> ILLUSIBUNCLE_SPAWN_EGG = REGISTRY.register("illusibuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.ILLUSIBUNCLE, -16777216, -10066330, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

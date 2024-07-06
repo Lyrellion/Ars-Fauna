@@ -43,6 +43,7 @@ public class ArsFaunaModTabs {
 			tabData.accept(ArsFaunaModItems.SONGBUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.CHEFBUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.TENTABUNCLE_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.ILLUSIBUNCLE_SPAWN_EGG.get());
 		}
 	}
 }
