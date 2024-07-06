@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class IllusibuncleRenderer extends GeoEntityRenderer<IllusibuncleEntity> {
 	public IllusibuncleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new IllusibuncleModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.4f;
 	}
 
 	@Override
