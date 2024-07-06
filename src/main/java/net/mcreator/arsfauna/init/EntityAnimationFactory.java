@@ -6,7 +6,9 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
+import net.mcreator.arsfauna.entity.TentabuncleEntity;
 import net.mcreator.arsfauna.entity.StarbuncleSwarmEntity;
+import net.mcreator.arsfauna.entity.SongbuncleEntity;
 import net.mcreator.arsfauna.entity.SkelebuncleEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleEntity;
 import net.mcreator.arsfauna.entity.ShadowbuncleEntity;
@@ -21,6 +23,7 @@ import net.mcreator.arsfauna.entity.EyebuncleEntity;
 import net.mcreator.arsfauna.entity.EnderbuncleEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyEntity;
 import net.mcreator.arsfauna.entity.CloudbuncleEntity;
+import net.mcreator.arsfauna.entity.ChefbuncleEntity;
 import net.mcreator.arsfauna.entity.CavebuncleEntity;
 
 @Mod.EventBusSubscriber
@@ -148,6 +151,27 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DarkDrygmyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SongbuncleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ChefbuncleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TentabuncleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

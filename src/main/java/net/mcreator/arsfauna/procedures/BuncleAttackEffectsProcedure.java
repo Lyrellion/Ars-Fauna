@@ -16,6 +16,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -50,16 +52,30 @@ public class BuncleAttackEffectsProcedure {
 		if (immediatesourceentity instanceof StarbuncleSwarmEntity && entity instanceof Player) {
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.GOLD_NUGGET)) : false) {
 				if (immediatesourceentity.getPersistentData().getBoolean("robber") == false) {
+					entity.getPersistentData().putDouble("lottery", (Mth.nextDouble(RandomSource.create(), 1, 20)));
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(Items.GOLD_NUGGET);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					immediatesourceentity.getPersistentData().putBoolean("robber", true);
 					ArsFaunaMod.queueServerWork(100, () -> {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), new ItemStack(Items.GOLD_INGOT));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
+						if (entity.getPersistentData().getDouble("lottery") == 20) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), new ItemStack(Items.GOLD_INGOT));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+						} else {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), new ItemStack(Items.GOLD_NUGGET));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), new ItemStack(Items.GOLD_NUGGET));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
 						}
 						ArsFaunaMod.queueServerWork(20, () -> {
 							if (world instanceof ServerLevel _level)

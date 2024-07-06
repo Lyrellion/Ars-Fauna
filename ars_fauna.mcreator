@@ -349,14 +349,11 @@
       "locked_code": false,
       "registry_name": "underground_dweller_spawn_rule",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/arsfauna/procedures/UndergroundDwellerSpawnRuleProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -384,6 +381,7 @@
       "locked_code": false,
       "registry_name": "burn_on_entity_tick_update",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/arsfauna/procedures/BurnOnEntityTickUpdateProcedure.java"
         ],
@@ -710,10 +708,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -746,41 +740,6 @@
           "src/main/java/net/mcreator/arsfauna/entity/CavebuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/cavebuncle_spawn_egg.json",
           "src/main/resources/data/ars_fauna/forge/biome_modifier/cavebuncle_biome_modifier.json"
-        ]
-      }
-    },
-    {
-      "name": "StarbuncleSwarmEntityDies",
-      "type": "procedure",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "starbuncle_swarm_entity_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/arsfauna/procedures/StarbuncleSwarmEntityDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -1201,6 +1160,191 @@
           }
         ]
       }
+    },
+    {
+      "name": "SongbuncleRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "songbuncle_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/SongbuncleRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Songbuncle",
+      "type": "animatedentity",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "songbuncle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/SongbuncleRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/model/SongbuncleModel.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/songbuncle_biome_modifier.json",
+          "src/main/resources/assets/ars_fauna/models/item/songbuncle_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/SongbuncleEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Chefbuncle",
+      "type": "animatedentity",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chefbuncle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/ChefbuncleRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/ChefbuncleEntity.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/chefbuncle_biome_modifier.json",
+          "src/main/java/net/mcreator/arsfauna/entity/model/ChefbuncleModel.java",
+          "src/main/resources/assets/ars_fauna/models/item/chefbuncle_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ChefbuncleRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chefbuncle_right_clicked_on_entity",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/ChefbuncleRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SongbuncleOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "songbuncle_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/SongbuncleOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeepDwellerSpawnRule",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_dweller_spawn_rule",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/DeepDwellerSpawnRuleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tentabuncle",
+      "type": "animatedentity",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentabuncle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/TentabuncleRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/TentabuncleEntity.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/tentabuncle_biome_modifier.json",
+          "src/main/resources/assets/ars_fauna/models/item/tentabuncle_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/model/TentabuncleModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1213,12 +1357,12 @@
       "item.ars_fauna.cloudbuncle_spawn_egg": "Cloudbuncle Spawn Egg",
       "entity.ars_fauna.shellbuncle": "Shellbuncle",
       "entity.ars_fauna.eyebuncle": "Eyebuncle",
-      "entity.ars_fauna.skelebuncle": "Skelebuncle",
-      "entity.ars_fauna.cloudbuncle": "Cloudbuncle",
       "entity.ars_fauna.dark_drygmy": "Dark Drygmy",
-      "entity.ars_fauna.cavebuncle": "Cavebuncle",
-      "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
+      "entity.ars_fauna.cloudbuncle": "Cloudbuncle",
+      "entity.ars_fauna.skelebuncle": "Skelebuncle",
       "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
+      "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
+      "entity.ars_fauna.cavebuncle": "Cavebuncle",
       "entity.ars_fauna.sandbuncle": "Sandbuncle",
       "entity.ars_fauna.vexbuncle": "Vexbuncle",
       "entity.ars_fauna.enderbuncle": "Enderbuncle",
@@ -1231,18 +1375,24 @@
       "entity.ars_fauna.goobuncle": "Goobuncle",
       "item.ars_fauna.giant_carnivorous_starbuncle_spawn_egg": "Giant Carnivorous Starbuncle Spawn Egg",
       "entity.ars_fauna.pyrobuncle": "Pyrobuncle",
+      "item.ars_fauna.chefbuncle_spawn_egg": "Chefbuncle Spawn Egg",
       "entity.ars_fauna.giant_carnivorous_starbuncle": "Giant Carnivorous Starbuncle",
+      "entity.ars_fauna.songbuncle": "Songbuncle",
+      "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
+      "item.ars_fauna.tentabuncle_spawn_egg": "Tentabuncle Spawn Egg",
       "item.ars_fauna.sandbuncle_spawn_egg": "Sandbuncle Spawn Egg",
       "item.ars_fauna.starbuncle_swarm_spawn_egg": "Starbuncle Swarm Spawn Egg",
       "item.ars_fauna.shellbuncle_spawn_egg": "Shellbuncle Spawn Egg",
       "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
       "item.ars_fauna.dark_drygmy_spawn_egg": "Dark Drygmy Spawn Egg",
+      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "item.ars_fauna.sculkbuncle_spawn_egg": "Sculkbuncle Spawn Egg",
       "item.ars_fauna.vexbuncle_spawn_egg": "Vexbuncle Spawn Egg",
       "entity.ars_fauna.seabuncle": "Seabuncle",
       "entity.ars_fauna.zombuncle": "Zombuncle",
       "entity.ars_fauna.starbuncle_swarm": "Starbuncle Swarm",
       "item.ars_fauna.eyebuncle_spawn_egg": "Eyebuncle Spawn Egg",
+      "entity.ars_fauna.chefbuncle": "Chefbuncle",
       "item.ars_fauna.shadowbuncle_spawn_egg": "Shadowbuncle Spawn Egg"
     }
   },

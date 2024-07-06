@@ -34,6 +34,9 @@ public class ArsFaunaModItems {
 	public static final RegistryObject<Item> CAVEBUNCLE_SPAWN_EGG = REGISTRY.register("cavebuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.CAVEBUNCLE, -3355444, -11389688, new Item.Properties()));
 	public static final RegistryObject<Item> SHELLBUNCLE_SPAWN_EGG = REGISTRY.register("shellbuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.SHELLBUNCLE, -6182, -16711732, new Item.Properties()));
 	public static final RegistryObject<Item> DARK_DRYGMY_SPAWN_EGG = REGISTRY.register("dark_drygmy_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.DARK_DRYGMY, -16777165, -10092442, new Item.Properties()));
+	public static final RegistryObject<Item> SONGBUNCLE_SPAWN_EGG = REGISTRY.register("songbuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.SONGBUNCLE, -1566, -16777216, new Item.Properties()));
+	public static final RegistryObject<Item> CHEFBUNCLE_SPAWN_EGG = REGISTRY.register("chefbuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.CHEFBUNCLE, -65082, -1, new Item.Properties()));
+	public static final RegistryObject<Item> TENTABUNCLE_SPAWN_EGG = REGISTRY.register("tentabuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.TENTABUNCLE, -10092442, -16777165, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

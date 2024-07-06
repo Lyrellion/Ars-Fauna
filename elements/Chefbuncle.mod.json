@@ -2,9 +2,9 @@
   "_fv": 60,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Dark Drygmy",
+    "mobName": "Chefbuncle",
     "mobLabel": "",
-    "mobModelTexture": "darkdrygmy.png",
+    "mobModelTexture": "chefbuncle.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -15,16 +15,16 @@
     "entityDataEntries": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
-    "modelShadowSize": 0.1,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16777165,
+      "value": -65082,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10092442,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -51,18 +51,18 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
-    "knockbackResistance": 5.0,
+    "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
-    "armorBaseValue": 4.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 20,
-    "xpAmount": 5,
-    "waterMob": true,
+    "xpAmount": 0,
+    "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -75,7 +75,7 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
@@ -101,27 +101,27 @@
     "stepSound": {
       "value": ""
     },
-    "onMobTickUpdate": {
-      "name": "DarkDrygmyAura"
+    "onRightClickedOn": {
+      "name": "ChefbuncleRightClickedOnEntity"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "darkdrygmy.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "chefbuncle.geo.json",
     "groupName": "head",
     "animation1": "idle",
     "animation2": "run",
     "animation3": "",
-    "animation4": "channel",
+    "animation4": "",
     "animation5": "",
     "animation6": "",
     "animation7": "",
     "animation8": "",
     "animation9": "",
-    "animation10": "channel",
+    "animation10": "",
     "enable2": true,
     "enable3": false,
-    "enable4": true,
+    "enable4": false,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -134,21 +134,18 @@
     "headMovement": true,
     "eyeHeight": false,
     "breedTriggerItems": [],
-    "ranged": true,
+    "ranged": false,
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "DarkDrygmyBolt",
-    "rangedAttackInterval": 60,
-    "rangedAttackRadius": 16.0,
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "UndergroundDwellerSpawnRule"
-    },
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "spawningProbability": 5,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],

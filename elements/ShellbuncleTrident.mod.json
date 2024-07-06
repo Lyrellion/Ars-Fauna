@@ -10,8 +10,8 @@
       "value": "item.trident.throw"
     },
     "igniteFire": false,
-    "power": 1.0,
-    "damage": 5.0,
+    "power": 3.0,
+    "damage": 0.3,
     "knockback": 5,
     "entityModel": "Default",
     "customModelTexture": ""

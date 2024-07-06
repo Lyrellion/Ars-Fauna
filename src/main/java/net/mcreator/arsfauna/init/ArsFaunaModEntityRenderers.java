@@ -13,7 +13,9 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.arsfauna.client.renderer.ZombuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.VexbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.TentabuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.StarbuncleSwarmRenderer;
+import net.mcreator.arsfauna.client.renderer.SongbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SkelebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.ShellbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.ShadowbuncleRenderer;
@@ -28,6 +30,7 @@ import net.mcreator.arsfauna.client.renderer.EyebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.EnderbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.DarkDrygmyRenderer;
 import net.mcreator.arsfauna.client.renderer.CloudbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.ChefbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.CavebuncleRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -58,5 +61,8 @@ public class ArsFaunaModEntityRenderers {
 		event.registerEntityRenderer(ArsFaunaModEntities.DARK_DRYGMY.get(), DarkDrygmyRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.SCULK_TRIGGER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.LASER_BEAM_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.SONGBUNCLE.get(), SongbuncleRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.CHEFBUNCLE.get(), ChefbuncleRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.TENTABUNCLE.get(), TentabuncleRenderer::new);
 	}
 }

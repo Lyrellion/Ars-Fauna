@@ -18,7 +18,9 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
+import net.mcreator.arsfauna.entity.TentabuncleEntity;
 import net.mcreator.arsfauna.entity.StarbuncleSwarmEntity;
+import net.mcreator.arsfauna.entity.SongbuncleEntity;
 import net.mcreator.arsfauna.entity.SkelebuncleEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleTridentEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleEntity;
@@ -39,6 +41,7 @@ import net.mcreator.arsfauna.entity.EnderbuncleEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyBoltEntity;
 import net.mcreator.arsfauna.entity.CloudbuncleEntity;
+import net.mcreator.arsfauna.entity.ChefbuncleEntity;
 import net.mcreator.arsfauna.entity.CavebuncleEntity;
 import net.mcreator.arsfauna.ArsFaunaMod;
 
@@ -122,6 +125,18 @@ public class ArsFaunaModEntities {
 			EntityType.Builder.<SculkTriggerEntity>of(SculkTriggerEntity::new, MobCategory.MISC).setCustomClientFactory(SculkTriggerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<LaserBeamProjectileEntity>> LASER_BEAM_PROJECTILE = register("laser_beam_projectile", EntityType.Builder.<LaserBeamProjectileEntity>of(LaserBeamProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(LaserBeamProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SongbuncleEntity>> SONGBUNCLE = register("songbuncle",
+			EntityType.Builder.<SongbuncleEntity>of(SongbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SongbuncleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChefbuncleEntity>> CHEFBUNCLE = register("chefbuncle",
+			EntityType.Builder.<ChefbuncleEntity>of(ChefbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChefbuncleEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TentabuncleEntity>> TENTABUNCLE = register("tentabuncle",
+			EntityType.Builder.<TentabuncleEntity>of(TentabuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TentabuncleEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -148,6 +163,9 @@ public class ArsFaunaModEntities {
 			CavebuncleEntity.init();
 			ShellbuncleEntity.init();
 			DarkDrygmyEntity.init();
+			SongbuncleEntity.init();
+			ChefbuncleEntity.init();
+			TentabuncleEntity.init();
 		});
 	}
 
@@ -171,5 +189,8 @@ public class ArsFaunaModEntities {
 		event.put(CAVEBUNCLE.get(), CavebuncleEntity.createAttributes().build());
 		event.put(SHELLBUNCLE.get(), ShellbuncleEntity.createAttributes().build());
 		event.put(DARK_DRYGMY.get(), DarkDrygmyEntity.createAttributes().build());
+		event.put(SONGBUNCLE.get(), SongbuncleEntity.createAttributes().build());
+		event.put(CHEFBUNCLE.get(), ChefbuncleEntity.createAttributes().build());
+		event.put(TENTABUNCLE.get(), TentabuncleEntity.createAttributes().build());
 	}
 }
