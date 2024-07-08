@@ -42,7 +42,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.arsfauna.procedures.CavebuncleOnInitialEntitySpawnProcedure;
+import net.mcreator.arsfauna.procedures.UndergroundDwellerSpawnRuleProcedure;
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 public class CavebuncleEntity extends PathfinderMob implements GeoEntity {
@@ -61,7 +61,7 @@ public class CavebuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public CavebuncleEntity(EntityType<CavebuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(3f);
 	}
@@ -159,7 +159,7 @@ public class CavebuncleEntity extends PathfinderMob implements GeoEntity {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return CavebuncleOnInitialEntitySpawnProcedure.execute(world, x, y, z);
+			return UndergroundDwellerSpawnRuleProcedure.execute(world, x, y, z);
 		});
 	}
 

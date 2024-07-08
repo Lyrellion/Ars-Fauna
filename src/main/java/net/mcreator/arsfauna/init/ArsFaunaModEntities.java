@@ -18,6 +18,8 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
+import net.mcreator.arsfauna.entity.ThornsprigEntityProjectile;
+import net.mcreator.arsfauna.entity.ThornsprigEntity;
 import net.mcreator.arsfauna.entity.TentabuncleEntity;
 import net.mcreator.arsfauna.entity.StarbuncleSwarmEntity;
 import net.mcreator.arsfauna.entity.SongbuncleEntity;
@@ -25,6 +27,7 @@ import net.mcreator.arsfauna.entity.SkelebuncleEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleTridentEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleEntity;
 import net.mcreator.arsfauna.entity.ShadowbuncleEntity;
+import net.mcreator.arsfauna.entity.SeasprigEntity;
 import net.mcreator.arsfauna.entity.SeabuncleEntity;
 import net.mcreator.arsfauna.entity.SculkbuncleEntity;
 import net.mcreator.arsfauna.entity.SculkTriggerEntity;
@@ -39,6 +42,7 @@ import net.mcreator.arsfauna.entity.FrostboltEntity;
 import net.mcreator.arsfauna.entity.FireboltEntity;
 import net.mcreator.arsfauna.entity.EyebuncleEntity;
 import net.mcreator.arsfauna.entity.EnderbuncleEntity;
+import net.mcreator.arsfauna.entity.DeepsprigEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyBoltEntity;
 import net.mcreator.arsfauna.entity.CloudbuncleEntity;
@@ -142,6 +146,20 @@ public class ArsFaunaModEntities {
 			EntityType.Builder.<IllusibuncleEntity>of(IllusibuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IllusibuncleEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DeepsprigEntity>> DEEPSPRIG = register("deepsprig",
+			EntityType.Builder.<DeepsprigEntity>of(DeepsprigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeepsprigEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SeasprigEntity>> SEASPRIG = register("seasprig",
+			EntityType.Builder.<SeasprigEntity>of(SeasprigEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeasprigEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ThornsprigEntity>> THORNSPRIG = register("thornsprig",
+			EntityType.Builder.<ThornsprigEntity>of(ThornsprigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ThornsprigEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<ThornsprigEntityProjectile>> THORNSPRIG_PROJECTILE = register("projectile_thornsprig", EntityType.Builder.<ThornsprigEntityProjectile>of(ThornsprigEntityProjectile::new, MobCategory.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ThornsprigEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -172,6 +190,9 @@ public class ArsFaunaModEntities {
 			ChefbuncleEntity.init();
 			TentabuncleEntity.init();
 			IllusibuncleEntity.init();
+			DeepsprigEntity.init();
+			SeasprigEntity.init();
+			ThornsprigEntity.init();
 		});
 	}
 
@@ -199,5 +220,8 @@ public class ArsFaunaModEntities {
 		event.put(CHEFBUNCLE.get(), ChefbuncleEntity.createAttributes().build());
 		event.put(TENTABUNCLE.get(), TentabuncleEntity.createAttributes().build());
 		event.put(ILLUSIBUNCLE.get(), IllusibuncleEntity.createAttributes().build());
+		event.put(DEEPSPRIG.get(), DeepsprigEntity.createAttributes().build());
+		event.put(SEASPRIG.get(), SeasprigEntity.createAttributes().build());
+		event.put(THORNSPRIG.get(), ThornsprigEntity.createAttributes().build());
 	}
 }

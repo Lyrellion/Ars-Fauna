@@ -61,7 +61,7 @@
     "trackingRange": 64,
     "followRange": 16,
     "health": 20,
-    "xpAmount": 0,
+    "xpAmount": 1,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -142,12 +142,12 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningCondition": {
-      "name": "CavebuncleOnInitialEntitySpawn"
+      "name": "UndergroundDwellerSpawnRule"
     },
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

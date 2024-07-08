@@ -12,7 +12,7 @@ public class DropSlimeballProcedure {
 		if (entity == null)
 			return;
 		entity.getPersistentData().putDouble("counter1", (entity.getPersistentData().getDouble("counter1") + 1));
-		if (entity.getPersistentData().getDouble("counter1") % 1500 == 0) {
+		if (entity.getPersistentData().getDouble("counter1") % 6000 == 0) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.SLIME_BALL));
 				entityToSpawn.setPickUpDelay(10);

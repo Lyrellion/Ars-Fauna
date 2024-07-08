@@ -64,7 +64,7 @@ public class ShadowbuncleEntity extends Monster implements GeoEntity {
 
 	public ShadowbuncleEntity(EntityType<ShadowbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 5;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

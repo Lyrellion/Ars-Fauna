@@ -68,7 +68,7 @@ public class CloudbuncleEntity extends Monster implements GeoEntity {
 
 	public CloudbuncleEntity(EntityType<CloudbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 		this.moveControl = new FlyingMoveControl(this, 10, true);

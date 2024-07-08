@@ -63,7 +63,7 @@ public class EnderbuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public EnderbuncleEntity(EntityType<EnderbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}
@@ -176,7 +176,7 @@ public class EnderbuncleEntity extends PathfinderMob implements GeoEntity {
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
 		return builder;
 	}
 

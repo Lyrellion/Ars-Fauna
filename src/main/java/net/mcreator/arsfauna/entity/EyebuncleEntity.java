@@ -70,7 +70,7 @@ public class EyebuncleEntity extends Monster implements RangedAttackMob, GeoEnti
 
 	public EyebuncleEntity(EntityType<EyebuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 3;
+		xpReward = 7;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

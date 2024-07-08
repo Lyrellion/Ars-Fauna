@@ -62,7 +62,7 @@ public class SandbuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public SandbuncleEntity(EntityType<SandbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

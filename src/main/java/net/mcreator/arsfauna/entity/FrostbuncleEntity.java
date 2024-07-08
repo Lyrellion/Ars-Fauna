@@ -70,7 +70,7 @@ public class FrostbuncleEntity extends PathfinderMob implements RangedAttackMob,
 
 	public FrostbuncleEntity(EntityType<FrostbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

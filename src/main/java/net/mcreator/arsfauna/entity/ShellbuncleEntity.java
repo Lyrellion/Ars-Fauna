@@ -74,7 +74,7 @@ public class ShellbuncleEntity extends PathfinderMob implements RangedAttackMob,
 
 	public ShellbuncleEntity(EntityType<ShellbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 3;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 		this.setPathfindingMalus(BlockPathTypes.WATER, 0);

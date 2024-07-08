@@ -6,12 +6,14 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
+import net.mcreator.arsfauna.entity.ThornsprigEntity;
 import net.mcreator.arsfauna.entity.TentabuncleEntity;
 import net.mcreator.arsfauna.entity.StarbuncleSwarmEntity;
 import net.mcreator.arsfauna.entity.SongbuncleEntity;
 import net.mcreator.arsfauna.entity.SkelebuncleEntity;
 import net.mcreator.arsfauna.entity.ShellbuncleEntity;
 import net.mcreator.arsfauna.entity.ShadowbuncleEntity;
+import net.mcreator.arsfauna.entity.SeasprigEntity;
 import net.mcreator.arsfauna.entity.SeabuncleEntity;
 import net.mcreator.arsfauna.entity.SculkbuncleEntity;
 import net.mcreator.arsfauna.entity.SandbuncleEntity;
@@ -22,6 +24,7 @@ import net.mcreator.arsfauna.entity.GiantCarnivorousStarbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostbuncleEntity;
 import net.mcreator.arsfauna.entity.EyebuncleEntity;
 import net.mcreator.arsfauna.entity.EnderbuncleEntity;
+import net.mcreator.arsfauna.entity.DeepsprigEntity;
 import net.mcreator.arsfauna.entity.DarkDrygmyEntity;
 import net.mcreator.arsfauna.entity.CloudbuncleEntity;
 import net.mcreator.arsfauna.entity.ChefbuncleEntity;
@@ -180,6 +183,27 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof IllusibuncleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DeepsprigEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SeasprigEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ThornsprigEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

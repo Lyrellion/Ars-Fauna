@@ -60,7 +60,7 @@ public class StarbuncleSwarmEntity extends PathfinderMob implements GeoEntity {
 
 	public StarbuncleSwarmEntity(EntityType<StarbuncleSwarmEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

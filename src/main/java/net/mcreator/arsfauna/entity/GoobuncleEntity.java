@@ -62,7 +62,7 @@ public class GoobuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public GoobuncleEntity(EntityType<GoobuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

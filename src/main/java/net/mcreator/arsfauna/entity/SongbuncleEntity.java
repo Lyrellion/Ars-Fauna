@@ -65,7 +65,7 @@ public class SongbuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public SongbuncleEntity(EntityType<SongbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

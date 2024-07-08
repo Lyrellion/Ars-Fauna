@@ -64,7 +64,7 @@ public class ChefbuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public ChefbuncleEntity(EntityType<ChefbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 1;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

@@ -44,6 +44,9 @@ public class ArsFaunaModTabs {
 			tabData.accept(ArsFaunaModItems.CHEFBUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.TENTABUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.ILLUSIBUNCLE_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.DEEPSPRIG_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.SEASPRIG_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.THORNSPRIG_SPAWN_EGG.get());
 		}
 	}
 }

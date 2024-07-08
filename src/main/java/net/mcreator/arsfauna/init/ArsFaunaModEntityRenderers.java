@@ -13,12 +13,14 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.arsfauna.client.renderer.ZombuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.VexbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.ThornsprigRenderer;
 import net.mcreator.arsfauna.client.renderer.TentabuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.StarbuncleSwarmRenderer;
 import net.mcreator.arsfauna.client.renderer.SongbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SkelebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.ShellbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.ShadowbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.SeasprigRenderer;
 import net.mcreator.arsfauna.client.renderer.SeabuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SculkbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.SandbuncleRenderer;
@@ -29,6 +31,7 @@ import net.mcreator.arsfauna.client.renderer.GiantCarnivorousStarbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.FrostbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.EyebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.EnderbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.DeepsprigRenderer;
 import net.mcreator.arsfauna.client.renderer.DarkDrygmyRenderer;
 import net.mcreator.arsfauna.client.renderer.CloudbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.ChefbuncleRenderer;
@@ -66,5 +69,9 @@ public class ArsFaunaModEntityRenderers {
 		event.registerEntityRenderer(ArsFaunaModEntities.CHEFBUNCLE.get(), ChefbuncleRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.TENTABUNCLE.get(), TentabuncleRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.ILLUSIBUNCLE.get(), IllusibuncleRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.DEEPSPRIG.get(), DeepsprigRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.SEASPRIG.get(), SeasprigRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.THORNSPRIG.get(), ThornsprigRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.THORNSPRIG_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

@@ -61,7 +61,7 @@
     "trackingRange": 64,
     "followRange": 16,
     "health": 10,
-    "xpAmount": 0,
+    "xpAmount": 3,
     "waterMob": true,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",

@@ -72,7 +72,7 @@ public class VexbuncleEntity extends Monster implements GeoEntity {
 
 	public VexbuncleEntity(EntityType<VexbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 5;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 		this.moveControl = new FlyingMoveControl(this, 10, true);

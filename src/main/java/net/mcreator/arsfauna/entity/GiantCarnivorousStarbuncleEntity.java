@@ -68,7 +68,7 @@ public class GiantCarnivorousStarbuncleEntity extends Monster implements GeoEnti
 
 	public GiantCarnivorousStarbuncleEntity(EntityType<GiantCarnivorousStarbuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 5;
+		xpReward = 7;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

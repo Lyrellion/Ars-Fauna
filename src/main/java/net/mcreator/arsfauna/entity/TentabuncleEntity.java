@@ -64,7 +64,7 @@ public class TentabuncleEntity extends Monster implements GeoEntity {
 
 	public TentabuncleEntity(EntityType<TentabuncleEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 5;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
 	}

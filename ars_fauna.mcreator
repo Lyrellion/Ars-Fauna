@@ -695,38 +695,6 @@
       }
     },
     {
-      "name": "CavebuncleOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cavebuncle_on_initial_entity_spawn",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/arsfauna/procedures/CavebuncleOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Cavebuncle",
       "type": "animatedentity",
       "sortid": 39,
@@ -1362,6 +1330,92 @@
           "src/main/java/net/mcreator/arsfauna/entity/model/IllusibuncleModel.java"
         ]
       }
+    },
+    {
+      "name": "Deepsprig",
+      "type": "animatedentity",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepsprig",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ars_fauna/models/item/deepsprig_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/model/DeepsprigModel.java",
+          "src/main/java/net/mcreator/arsfauna/entity/DeepsprigEntity.java",
+          "src/main/java/net/mcreator/arsfauna/client/renderer/DeepsprigRenderer.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/deepsprig_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Seasprig",
+      "type": "animatedentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seasprig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/SeasprigRenderer.java",
+          "src/main/resources/assets/ars_fauna/models/item/seasprig_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/model/SeasprigModel.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/seasprig_biome_modifier.json",
+          "src/main/java/net/mcreator/arsfauna/entity/SeasprigEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Thornsprig",
+      "type": "animatedentity",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thornsprig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/ThornsprigRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/ThornsprigEntity.java",
+          "src/main/java/net/mcreator/arsfauna/entity/ThornsprigEntityProjectile.java",
+          "src/main/java/net/mcreator/arsfauna/entity/model/ThornsprigModel.java",
+          "src/main/resources/assets/ars_fauna/models/item/thornsprig_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ThornsprigSpawn",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thornsprig_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/ThornsprigSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1370,6 +1424,21 @@
   "language_map": {
     "en_us": {
       "item.ars_fauna.cavebuncle_spawn_egg": "Cavebuncle Spawn Egg",
+      "entity.ars_fauna.thornsprig": "Thornsprig",
+      "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
+      "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
+      "item.ars_fauna.seasprig_spawn_egg": "Seasprig Spawn Egg",
+      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
+      "entity.ars_fauna.frostbuncle": "Frostbuncle",
+      "item.ars_fauna.skelebuncle_spawn_egg": "Skelebuncle Spawn Egg",
+      "item.ars_fauna.enderbuncle_spawn_egg": "Enderbuncle Spawn Egg",
+      "item.ars_fauna.seabuncle_spawn_egg": "Seabuncle Spawn Egg",
+      "item.ars_fauna.thornsprig_spawn_egg": "Thornsprig Spawn Egg",
+      "entity.ars_fauna.songbuncle": "Songbuncle",
+      "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
+      "entity.ars_fauna.tentabuncle": "Tentabuncle",
+      "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
+      "entity.ars_fauna.seabuncle": "Seabuncle",
       "item.ars_fauna.frostbuncle_spawn_egg": "Frostbuncle Spawn Egg",
       "item.ars_fauna.cloudbuncle_spawn_egg": "Cloudbuncle Spawn Egg",
       "entity.ars_fauna.shellbuncle": "Shellbuncle",
@@ -1377,38 +1446,29 @@
       "entity.ars_fauna.dark_drygmy": "Dark Drygmy",
       "entity.ars_fauna.cloudbuncle": "Cloudbuncle",
       "entity.ars_fauna.skelebuncle": "Skelebuncle",
-      "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
-      "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
       "entity.ars_fauna.cavebuncle": "Cavebuncle",
+      "entity.ars_fauna.deepsprig": "Deepsprig",
       "entity.ars_fauna.sandbuncle": "Sandbuncle",
       "entity.ars_fauna.vexbuncle": "Vexbuncle",
       "entity.ars_fauna.enderbuncle": "Enderbuncle",
       "item.ars_fauna.goobuncle_spawn_egg": "Goobuncle Spawn Egg",
-      "entity.ars_fauna.frostbuncle": "Frostbuncle",
-      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
-      "item.ars_fauna.skelebuncle_spawn_egg": "Skelebuncle Spawn Egg",
-      "item.ars_fauna.enderbuncle_spawn_egg": "Enderbuncle Spawn Egg",
-      "item.ars_fauna.seabuncle_spawn_egg": "Seabuncle Spawn Egg",
       "entity.ars_fauna.goobuncle": "Goobuncle",
+      "item.ars_fauna.deepsprig_spawn_egg": "Deepsprig Spawn Egg",
       "item.ars_fauna.giant_carnivorous_starbuncle_spawn_egg": "Giant Carnivorous Starbuncle Spawn Egg",
       "entity.ars_fauna.pyrobuncle": "Pyrobuncle",
       "entity.ars_fauna.illusibuncle": "Illusibuncle",
       "item.ars_fauna.chefbuncle_spawn_egg": "Chefbuncle Spawn Egg",
       "entity.ars_fauna.giant_carnivorous_starbuncle": "Giant Carnivorous Starbuncle",
-      "entity.ars_fauna.songbuncle": "Songbuncle",
-      "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
       "item.ars_fauna.tentabuncle_spawn_egg": "Tentabuncle Spawn Egg",
       "item.ars_fauna.sandbuncle_spawn_egg": "Sandbuncle Spawn Egg",
       "item.ars_fauna.illusibuncle_spawn_egg": "Illusibuncle Spawn Egg",
       "item.ars_fauna.starbuncle_swarm_spawn_egg": "Starbuncle Swarm Spawn Egg",
       "item.ars_fauna.shellbuncle_spawn_egg": "Shellbuncle Spawn Egg",
-      "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
       "item.ars_fauna.dark_drygmy_spawn_egg": "Dark Drygmy Spawn Egg",
-      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "item.ars_fauna.sculkbuncle_spawn_egg": "Sculkbuncle Spawn Egg",
       "item.ars_fauna.vexbuncle_spawn_egg": "Vexbuncle Spawn Egg",
-      "entity.ars_fauna.seabuncle": "Seabuncle",
       "entity.ars_fauna.zombuncle": "Zombuncle",
+      "entity.ars_fauna.seasprig": "Seasprig",
       "entity.ars_fauna.starbuncle_swarm": "Starbuncle Swarm",
       "item.ars_fauna.eyebuncle_spawn_egg": "Eyebuncle Spawn Egg",
       "entity.ars_fauna.chefbuncle": "Chefbuncle",
