@@ -3,7 +3,7 @@
   "biomes": "deep_dark",
   "spawners": {
     "type": "ars_fauna:sculkbuncle",
-    "weight": 20,
+    "weight": 60,
     "minCount": 1,
     "maxCount": 1
   }

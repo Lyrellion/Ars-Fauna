@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.SLIME_BALL"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "enchant.thorns.hit"
+    },
+    "igniteFire": false,
+    "power": 2.0,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsPlayer": {
+      "name": "ThornBoltProjectileHitsPlayer"
+    }
+  }
+}

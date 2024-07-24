@@ -83,6 +83,10 @@ public class DarkDrygmyBoltEntity extends AbstractArrow implements ItemSupplier 
 		return shoot(world, entity, source, 0.75f, 0.1, 0);
 	}
 
+	public static DarkDrygmyBoltEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 0.75f, 0.1, 0);
+	}
+
 	public static DarkDrygmyBoltEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		DarkDrygmyBoltEntity entityarrow = new DarkDrygmyBoltEntity(ArsFaunaModEntities.DARK_DRYGMY_BOLT.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

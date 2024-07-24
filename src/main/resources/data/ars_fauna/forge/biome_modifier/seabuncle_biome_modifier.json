@@ -10,7 +10,7 @@
   ],
   "spawners": {
     "type": "ars_fauna:seabuncle",
-    "weight": 20,
+    "weight": 12,
     "minCount": 1,
     "maxCount": 1
   }

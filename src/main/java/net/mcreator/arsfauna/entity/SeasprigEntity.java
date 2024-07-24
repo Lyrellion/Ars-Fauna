@@ -46,6 +46,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.mcreator.arsfauna.procedures.SeasprigOnEntityTickUpdateProcedure;
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 public class SeasprigEntity extends PathfinderMob implements GeoEntity {
@@ -175,6 +176,7 @@ public class SeasprigEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		SeasprigOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -230,16 +232,22 @@ public class SeasprigEntity extends PathfinderMob implements GeoEntity {
 		return PlayState.STOP;
 	}
 
+	String prevAnim = "empty";
+
 	private PlayState procedurePredicate(AnimationState event) {
-		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+			if (!this.animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 				this.animationprocedure = "empty";
 				event.getController().forceAnimationReset();
 			}
 		} else if (animationprocedure.equals("empty")) {
+			prevAnim = "empty";
 			return PlayState.STOP;
 		}
+		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;
 	}
 

@@ -22,8 +22,8 @@ public class ArsFaunaModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(ArsFaunaModItems.SEABUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.FROSTBUNCLE_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.SEABUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.STARBUNCLE_SWARM_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.EYEBUNCLE_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.PYROBUNCLE_SPAWN_EGG.get());
@@ -47,6 +47,7 @@ public class ArsFaunaModTabs {
 			tabData.accept(ArsFaunaModItems.DEEPSPRIG_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.SEASPRIG_SPAWN_EGG.get());
 			tabData.accept(ArsFaunaModItems.THORNSPRIG_SPAWN_EGG.get());
+			tabData.accept(ArsFaunaModItems.FAEBUNCLE_SPAWN_EGG.get());
 		}
 	}
 }

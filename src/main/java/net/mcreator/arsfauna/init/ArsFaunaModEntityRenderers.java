@@ -29,6 +29,7 @@ import net.mcreator.arsfauna.client.renderer.IllusibuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.GoobuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.GiantCarnivorousStarbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.FrostbuncleRenderer;
+import net.mcreator.arsfauna.client.renderer.FaebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.EyebuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.EnderbuncleRenderer;
 import net.mcreator.arsfauna.client.renderer.DeepsprigRenderer;
@@ -72,6 +73,8 @@ public class ArsFaunaModEntityRenderers {
 		event.registerEntityRenderer(ArsFaunaModEntities.DEEPSPRIG.get(), DeepsprigRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.SEASPRIG.get(), SeasprigRenderer::new);
 		event.registerEntityRenderer(ArsFaunaModEntities.THORNSPRIG.get(), ThornsprigRenderer::new);
-		event.registerEntityRenderer(ArsFaunaModEntities.THORNSPRIG_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.THORN_BOLT.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.PSYCHIC_BLAST.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ArsFaunaModEntities.FAEBUNCLE.get(), FaebuncleRenderer::new);
 	}
 }

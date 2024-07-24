@@ -18,8 +18,8 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
-import net.mcreator.arsfauna.entity.ThornsprigEntityProjectile;
 import net.mcreator.arsfauna.entity.ThornsprigEntity;
+import net.mcreator.arsfauna.entity.ThornBoltEntity;
 import net.mcreator.arsfauna.entity.TentabuncleEntity;
 import net.mcreator.arsfauna.entity.StarbuncleSwarmEntity;
 import net.mcreator.arsfauna.entity.SongbuncleEntity;
@@ -33,6 +33,7 @@ import net.mcreator.arsfauna.entity.SculkbuncleEntity;
 import net.mcreator.arsfauna.entity.SculkTriggerEntity;
 import net.mcreator.arsfauna.entity.SandbuncleEntity;
 import net.mcreator.arsfauna.entity.PyrobuncleEntity;
+import net.mcreator.arsfauna.entity.PsychicBlastEntity;
 import net.mcreator.arsfauna.entity.LaserBeamProjectileEntity;
 import net.mcreator.arsfauna.entity.IllusibuncleEntity;
 import net.mcreator.arsfauna.entity.GoobuncleEntity;
@@ -40,6 +41,7 @@ import net.mcreator.arsfauna.entity.GiantCarnivorousStarbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostboltEntity;
 import net.mcreator.arsfauna.entity.FireboltEntity;
+import net.mcreator.arsfauna.entity.FaebuncleEntity;
 import net.mcreator.arsfauna.entity.EyebuncleEntity;
 import net.mcreator.arsfauna.entity.EnderbuncleEntity;
 import net.mcreator.arsfauna.entity.DeepsprigEntity;
@@ -158,8 +160,12 @@ public class ArsFaunaModEntities {
 			EntityType.Builder.<ThornsprigEntity>of(ThornsprigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ThornsprigEntity::new)
 
 					.sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<ThornsprigEntityProjectile>> THORNSPRIG_PROJECTILE = register("projectile_thornsprig", EntityType.Builder.<ThornsprigEntityProjectile>of(ThornsprigEntityProjectile::new, MobCategory.MISC)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ThornsprigEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ThornBoltEntity>> THORN_BOLT = register("thorn_bolt",
+			EntityType.Builder.<ThornBoltEntity>of(ThornBoltEntity::new, MobCategory.MISC).setCustomClientFactory(ThornBoltEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PsychicBlastEntity>> PSYCHIC_BLAST = register("psychic_blast",
+			EntityType.Builder.<PsychicBlastEntity>of(PsychicBlastEntity::new, MobCategory.MISC).setCustomClientFactory(PsychicBlastEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FaebuncleEntity>> FAEBUNCLE = register("faebuncle", EntityType.Builder.<FaebuncleEntity>of(FaebuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(FaebuncleEntity::new).fireImmune().sized(0.6f, 1.2f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -193,6 +199,7 @@ public class ArsFaunaModEntities {
 			DeepsprigEntity.init();
 			SeasprigEntity.init();
 			ThornsprigEntity.init();
+			FaebuncleEntity.init();
 		});
 	}
 
@@ -223,5 +230,6 @@ public class ArsFaunaModEntities {
 		event.put(DEEPSPRIG.get(), DeepsprigEntity.createAttributes().build());
 		event.put(SEASPRIG.get(), SeasprigEntity.createAttributes().build());
 		event.put(THORNSPRIG.get(), ThornsprigEntity.createAttributes().build());
+		event.put(FAEBUNCLE.get(), FaebuncleEntity.createAttributes().build());
 	}
 }

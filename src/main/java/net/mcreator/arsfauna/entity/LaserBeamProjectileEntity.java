@@ -85,6 +85,10 @@ public class LaserBeamProjectileEntity extends AbstractArrow implements ItemSupp
 		return shoot(world, entity, source, 0.75f, 1, 1);
 	}
 
+	public static LaserBeamProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 0.75f, 1, 1);
+	}
+
 	public static LaserBeamProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		LaserBeamProjectileEntity entityarrow = new LaserBeamProjectileEntity(ArsFaunaModEntities.LASER_BEAM_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

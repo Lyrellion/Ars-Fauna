@@ -22,6 +22,7 @@ import net.mcreator.arsfauna.entity.IllusibuncleEntity;
 import net.mcreator.arsfauna.entity.GoobuncleEntity;
 import net.mcreator.arsfauna.entity.GiantCarnivorousStarbuncleEntity;
 import net.mcreator.arsfauna.entity.FrostbuncleEntity;
+import net.mcreator.arsfauna.entity.FaebuncleEntity;
 import net.mcreator.arsfauna.entity.EyebuncleEntity;
 import net.mcreator.arsfauna.entity.EnderbuncleEntity;
 import net.mcreator.arsfauna.entity.DeepsprigEntity;
@@ -204,6 +205,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof ThornsprigEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FaebuncleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

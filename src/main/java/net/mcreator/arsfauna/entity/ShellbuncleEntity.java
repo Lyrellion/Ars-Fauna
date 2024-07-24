@@ -20,6 +20,8 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -251,6 +253,11 @@ public class ShellbuncleEntity extends PathfinderMob implements RangedAttackMob,
 		return MobType.UNDEFINED;
 	}
 
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(Items.NAUTILUS_SHELL));
+	}
+
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
@@ -346,16 +353,22 @@ public class ShellbuncleEntity extends PathfinderMob implements RangedAttackMob,
 		return PlayState.STOP;
 	}
 
+	String prevAnim = "empty";
+
 	private PlayState procedurePredicate(AnimationState event) {
-		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+			if (!this.animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 				this.animationprocedure = "empty";
 				event.getController().forceAnimationReset();
 			}
 		} else if (animationprocedure.equals("empty")) {
+			prevAnim = "empty";
 			return PlayState.STOP;
 		}
+		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;
 	}
 

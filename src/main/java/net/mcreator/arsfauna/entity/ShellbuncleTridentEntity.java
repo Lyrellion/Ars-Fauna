@@ -75,6 +75,10 @@ public class ShellbuncleTridentEntity extends AbstractArrow implements ItemSuppl
 		return shoot(world, entity, source, 3f, 0.3, 5);
 	}
 
+	public static ShellbuncleTridentEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 3f, 0.3, 5);
+	}
+
 	public static ShellbuncleTridentEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		ShellbuncleTridentEntity entityarrow = new ShellbuncleTridentEntity(ArsFaunaModEntities.SHELLBUNCLE_TRIDENT.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

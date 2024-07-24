@@ -14,12 +14,12 @@ import net.mcreator.arsfauna.entity.GoobuncleEntity;
 public class GoobuncleModel extends GeoModel<GoobuncleEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GoobuncleEntity entity) {
-		return new ResourceLocation("ars_fauna", "animations/goobuncle.animation.json");
+		return new ResourceLocation("ars_fauna", "animations/goobuncle_v08.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GoobuncleEntity entity) {
-		return new ResourceLocation("ars_fauna", "geo/goobuncle.geo.json");
+		return new ResourceLocation("ars_fauna", "geo/goobuncle_v08.geo.json");
 	}
 
 	@Override

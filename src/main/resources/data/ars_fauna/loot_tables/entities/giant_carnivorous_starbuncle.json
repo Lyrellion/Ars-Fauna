@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:entity",
+  "pools": [],
+  "random_sequence": "ars_fauna:entities/giant_carnivorous_starbuncle"
+}

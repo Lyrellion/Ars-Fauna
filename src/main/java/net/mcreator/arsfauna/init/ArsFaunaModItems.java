@@ -41,6 +41,7 @@ public class ArsFaunaModItems {
 	public static final RegistryObject<Item> DEEPSPRIG_SPAWN_EGG = REGISTRY.register("deepsprig_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.DEEPSPRIG, -65536, -1, new Item.Properties()));
 	public static final RegistryObject<Item> SEASPRIG_SPAWN_EGG = REGISTRY.register("seasprig_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.SEASPRIG, -16724788, -39169, new Item.Properties()));
 	public static final RegistryObject<Item> THORNSPRIG_SPAWN_EGG = REGISTRY.register("thornsprig_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.THORNSPRIG, -16751104, -13421824, new Item.Properties()));
+	public static final RegistryObject<Item> FAEBUNCLE_SPAWN_EGG = REGISTRY.register("faebuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.FAEBUNCLE, -3407668, -16724788, new Item.Properties()));
 	// Start of user code block custom items
 	// End of user code block custom items
 }

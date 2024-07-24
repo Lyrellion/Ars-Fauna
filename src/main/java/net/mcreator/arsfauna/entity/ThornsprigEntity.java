@@ -51,6 +51,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.arsfauna.procedures.ThornsprigAuraProcedure;
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 import javax.annotation.Nullable;
@@ -166,7 +167,7 @@ public class ThornsprigEntity extends Monster implements RangedAttackMob, GeoEnt
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(1, new ThornsprigEntity.RangedAttackGoal(this, 1.25, 20, 10f) {
+		this.goalSelector.addGoal(1, new ThornsprigEntity.RangedAttackGoal(this, 1.25, 100, 10f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -298,6 +299,7 @@ public class ThornsprigEntity extends Monster implements RangedAttackMob, GeoEnt
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		ThornsprigAuraProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -308,12 +310,7 @@ public class ThornsprigEntity extends Monster implements RangedAttackMob, GeoEnt
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		ThornsprigEntityProjectile entityarrow = new ThornsprigEntityProjectile(ArsFaunaModEntities.THORNSPRIG_PROJECTILE.get(), this, this.level());
-		double d0 = target.getY() + target.getEyeHeight() - 1.1;
-		double d1 = target.getX() - this.getX();
-		double d3 = target.getZ() - this.getZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-		this.level().addFreshEntity(entityarrow);
+		ThornBoltEntity.shoot(this, target);
 	}
 
 	@Override
@@ -354,16 +351,22 @@ public class ThornsprigEntity extends Monster implements RangedAttackMob, GeoEnt
 		return PlayState.STOP;
 	}
 
+	String prevAnim = "empty";
+
 	private PlayState procedurePredicate(AnimationState event) {
-		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+		if (!animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+			if (!this.animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 				this.animationprocedure = "empty";
 				event.getController().forceAnimationReset();
 			}
 		} else if (animationprocedure.equals("empty")) {
+			prevAnim = "empty";
 			return PlayState.STOP;
 		}
+		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;
 	}
 

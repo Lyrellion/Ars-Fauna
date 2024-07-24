@@ -3,7 +3,6 @@
     {
       "name": "Frostbuncle",
       "type": "animatedentity",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frostbuncle",
@@ -20,7 +19,6 @@
     {
       "name": "Seabuncle",
       "type": "animatedentity",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "seabuncle",
@@ -37,7 +35,6 @@
     {
       "name": "StarbuncleSwarm",
       "type": "animatedentity",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "starbuncle_swarm",
@@ -54,7 +51,6 @@
     {
       "name": "Eyebuncle",
       "type": "animatedentity",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eyebuncle",
@@ -71,7 +67,6 @@
     {
       "name": "Pyrobuncle",
       "type": "animatedentity",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrobuncle",
@@ -88,7 +83,6 @@
     {
       "name": "Sandbuncle",
       "type": "animatedentity",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandbuncle",
@@ -105,7 +99,6 @@
     {
       "name": "Zombuncle",
       "type": "animatedentity",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombuncle",
@@ -122,7 +115,6 @@
     {
       "name": "Sculkbuncle",
       "type": "animatedentity",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculkbuncle",
@@ -139,7 +131,6 @@
     {
       "name": "Vexbuncle",
       "type": "animatedentity",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vexbuncle",
@@ -156,7 +147,6 @@
     {
       "name": "Skelebuncle",
       "type": "animatedentity",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "skelebuncle",
@@ -173,7 +163,6 @@
     {
       "name": "Shadowbuncle",
       "type": "animatedentity",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shadowbuncle",
@@ -190,7 +179,6 @@
     {
       "name": "Cloudbuncle",
       "type": "animatedentity",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cloudbuncle",
@@ -207,7 +195,6 @@
     {
       "name": "GiantCarnivorousStarbuncle",
       "type": "animatedentity",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "giant_carnivorous_starbuncle",
@@ -224,7 +211,6 @@
     {
       "name": "Firebolt",
       "type": "projectile",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firebolt",
@@ -237,7 +223,6 @@
     {
       "name": "SandbunclePlayerCollidesWithThisEntity",
       "type": "procedure",
-      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandbuncle_player_collides_with_this_entity",
@@ -260,7 +245,6 @@
     {
       "name": "FrostboltProjectileHitsPlayer",
       "type": "procedure",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frostbolt_projectile_hits_player",
@@ -279,7 +263,6 @@
     {
       "name": "Frostbolt",
       "type": "projectile",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frostbolt",
@@ -292,7 +275,6 @@
     {
       "name": "PyrobuncleOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrobuncle_on_entity_tick_update",
@@ -327,7 +309,6 @@
     {
       "name": "Goobuncle",
       "type": "animatedentity",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "goobuncle",
@@ -344,7 +325,6 @@
     {
       "name": "UndergroundDwellerSpawnRule",
       "type": "procedure",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "underground_dweller_spawn_rule",
@@ -376,7 +356,6 @@
     {
       "name": "BurnOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "burn_on_entity_tick_update",
@@ -412,7 +391,6 @@
     {
       "name": "SandbuncleOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandbuncle_on_entity_tick_update",
@@ -447,7 +425,6 @@
     {
       "name": "PyrobuncleNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pyrobuncle_natural_entity_spawning_condition",
@@ -479,7 +456,6 @@
     {
       "name": "SandbuncleNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sandbuncle_natural_entity_spawning_condition",
@@ -511,7 +487,6 @@
     {
       "name": "CloudbuncleNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cloudbuncle_natural_entity_spawning_condition",
@@ -543,7 +518,6 @@
     {
       "name": "DropSlimeball",
       "type": "procedure",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drop_slimeball",
@@ -578,7 +552,6 @@
     {
       "name": "Enderbuncle",
       "type": "animatedentity",
-      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderbuncle",
@@ -595,7 +568,6 @@
     {
       "name": "EnderbuncleNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderbuncle_natural_entity_spawning_condition",
@@ -627,7 +599,6 @@
     {
       "name": "EnderbuncleEntityIsHurt",
       "type": "procedure",
-      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enderbuncle_entity_is_hurt",
@@ -662,7 +633,6 @@
     {
       "name": "ZombuncleOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombuncle_on_initial_entity_spawn",
@@ -697,7 +667,6 @@
     {
       "name": "Cavebuncle",
       "type": "animatedentity",
-      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cavebuncle",
@@ -714,7 +683,6 @@
     {
       "name": "Shellbuncle",
       "type": "animatedentity",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shellbuncle",
@@ -731,7 +699,6 @@
     {
       "name": "ShellbuncleTrident",
       "type": "projectile",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shellbuncle_trident",
@@ -744,7 +711,6 @@
     {
       "name": "PlayerHoldingGold",
       "type": "procedure",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_holding_gold",
@@ -760,6 +726,22 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -767,7 +749,6 @@
     {
       "name": "DarkDrygmyPlayerCollidesWithThisEntity",
       "type": "procedure",
-      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_drygmy_player_collides_with_this_entity",
@@ -786,7 +767,6 @@
     {
       "name": "DarkDrygmyBolt",
       "type": "projectile",
-      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_drygmy_bolt",
@@ -799,7 +779,6 @@
     {
       "name": "DarkDrygmy",
       "type": "animatedentity",
-      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_drygmy",
@@ -816,7 +795,6 @@
     {
       "name": "DarkDrygmyBoltProjectileHitsPlayer",
       "type": "procedure",
-      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_drygmy_bolt_projectile_hits_player",
@@ -835,7 +813,6 @@
     {
       "name": "SculkbuncleOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculkbuncle_on_entity_tick_update",
@@ -871,7 +848,6 @@
     {
       "name": "SculkTrigger",
       "type": "projectile",
-      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sculk_trigger",
@@ -884,7 +860,6 @@
     {
       "name": "CloudbuncleAura",
       "type": "procedure",
-      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cloudbuncle_aura",
@@ -920,7 +895,6 @@
     {
       "name": "BuncleAttackEffects",
       "type": "procedure",
-      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "buncle_attack_effects",
@@ -960,7 +934,6 @@
     {
       "name": "FrostbuncleOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frostbuncle_on_entity_tick_update",
@@ -995,7 +968,6 @@
     {
       "name": "LaserBeamProjectileWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laser_beam_projectile_while_projectile_flying_tick",
@@ -1026,7 +998,6 @@
     {
       "name": "EyebuncleBeam",
       "type": "procedure",
-      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eyebuncle_beam",
@@ -1058,7 +1029,6 @@
     {
       "name": "LaserBeamProjectile",
       "type": "projectile",
-      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laser_beam_projectile",
@@ -1071,7 +1041,6 @@
     {
       "name": "LaserBeamBase",
       "type": "particle",
-      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laser_beam_base",
@@ -1085,7 +1054,6 @@
     {
       "name": "LaserBeamParticle",
       "type": "particlemodel",
-      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "laser_beam_particle",
@@ -1096,7 +1064,6 @@
     {
       "name": "DarkDrygmyAura",
       "type": "procedure",
-      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_drygmy_aura",
@@ -1132,7 +1099,6 @@
     {
       "name": "SongbuncleRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "songbuncle_right_clicked_on_entity",
@@ -1163,7 +1129,6 @@
     {
       "name": "Songbuncle",
       "type": "animatedentity",
-      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "songbuncle",
@@ -1180,7 +1145,6 @@
     {
       "name": "Chefbuncle",
       "type": "animatedentity",
-      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chefbuncle",
@@ -1197,7 +1161,6 @@
     {
       "name": "ChefbuncleRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chefbuncle_right_clicked_on_entity",
@@ -1233,7 +1196,6 @@
     {
       "name": "SongbuncleOnEntityTickUpdate",
       "type": "procedure",
-      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "songbuncle_on_entity_tick_update",
@@ -1268,7 +1230,6 @@
     {
       "name": "DeepDwellerSpawnRule",
       "type": "procedure",
-      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deep_dweller_spawn_rule",
@@ -1300,7 +1261,6 @@
     {
       "name": "Tentabuncle",
       "type": "animatedentity",
-      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tentabuncle",
@@ -1317,7 +1277,6 @@
     {
       "name": "Illusibuncle",
       "type": "animatedentity",
-      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "illusibuncle",
@@ -1334,7 +1293,6 @@
     {
       "name": "Deepsprig",
       "type": "animatedentity",
-      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deepsprig",
@@ -1351,7 +1309,6 @@
     {
       "name": "Seasprig",
       "type": "animatedentity",
-      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "seasprig",
@@ -1368,7 +1325,6 @@
     {
       "name": "Thornsprig",
       "type": "animatedentity",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thornsprig",
@@ -1376,7 +1332,6 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/ThornsprigRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/ThornsprigEntity.java",
-          "src/main/java/net/mcreator/arsfauna/entity/ThornsprigEntityProjectile.java",
           "src/main/java/net/mcreator/arsfauna/entity/model/ThornsprigModel.java",
           "src/main/resources/assets/ars_fauna/models/item/thornsprig_spawn_egg.json"
         ]
@@ -1385,7 +1340,6 @@
     {
       "name": "ThornsprigSpawn",
       "type": "procedure",
-      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thornsprig_spawn",
@@ -1416,11 +1370,364 @@
           }
         ]
       }
+    },
+    {
+      "name": "ThornBoltProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorn_bolt_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/ThornBoltProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThornBolt",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorn_bolt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/entity/ThornBoltEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ThornsprigAura",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thornsprig_aura",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/ThornsprigAuraProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TentabuncleAura",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentabuncle_aura",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/TentabuncleAuraProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConvertToMycelium",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "convert_to_mycelium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/ConvertToMyceliumProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PsychicBlastWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "psychic_blast_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/PsychicBlastWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PsychicBlastProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "psychic_blast_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/PsychicBlastProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PsychicBlast",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "psychic_blast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/entity/PsychicBlastEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SeasprigOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seasprig_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/procedures/SeasprigOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EyebuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyebuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/eyebuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "ShadowbuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadowbuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/shadowbuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "DarkDrygmyLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_drygmy_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/dark_drygmy.json"
+        ]
+      }
+    },
+    {
+      "name": "IllusibuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illusibuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/illusibuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "GCBuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gc_buncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/giant_carnivorous_starbuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "Faebuncle",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faebuncle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/arsfauna/client/renderer/FaebuncleRenderer.java",
+          "src/main/java/net/mcreator/arsfauna/entity/model/FaebuncleModel.java",
+          "src/main/resources/assets/ars_fauna/models/item/faebuncle_spawn_egg.json",
+          "src/main/java/net/mcreator/arsfauna/entity/FaebuncleEntity.java",
+          "src/main/resources/data/ars_fauna/forge/biome_modifier/faebuncle_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "SkelebuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelebuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/skelebuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "FrostbuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frostbuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/frostbuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "ZombuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/zombuncle.json"
+        ]
+      }
+    },
+    {
+      "name": "TentabuncleLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tentabuncle_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ars_fauna/loot_tables/entities/tentabuncle.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.ars_fauna.cavebuncle_spawn_egg": "Cavebuncle Spawn Egg",
@@ -1428,20 +1735,22 @@
       "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
       "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
       "item.ars_fauna.seasprig_spawn_egg": "Seasprig Spawn Egg",
-      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
       "entity.ars_fauna.frostbuncle": "Frostbuncle",
+      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
       "item.ars_fauna.skelebuncle_spawn_egg": "Skelebuncle Spawn Egg",
       "item.ars_fauna.enderbuncle_spawn_egg": "Enderbuncle Spawn Egg",
       "item.ars_fauna.seabuncle_spawn_egg": "Seabuncle Spawn Egg",
       "item.ars_fauna.thornsprig_spawn_egg": "Thornsprig Spawn Egg",
+      "item.ars_fauna.faebuncle_spawn_egg": "Faebuncle Spawn Egg",
       "entity.ars_fauna.songbuncle": "Songbuncle",
       "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
-      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
+      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "entity.ars_fauna.seabuncle": "Seabuncle",
       "item.ars_fauna.frostbuncle_spawn_egg": "Frostbuncle Spawn Egg",
       "item.ars_fauna.cloudbuncle_spawn_egg": "Cloudbuncle Spawn Egg",
       "entity.ars_fauna.shellbuncle": "Shellbuncle",
+      "entity.ars_fauna.faebuncle": "Faebuncle",
       "entity.ars_fauna.eyebuncle": "Eyebuncle",
       "entity.ars_fauna.dark_drygmy": "Dark Drygmy",
       "entity.ars_fauna.cloudbuncle": "Cloudbuncle",
@@ -1497,5 +1806,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.arsfauna"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400229712
 }

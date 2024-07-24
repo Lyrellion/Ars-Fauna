@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Seasprig",
@@ -101,6 +101,9 @@
     "stepSound": {
       "value": ""
     },
+    "onMobTickUpdate": {
+      "name": "SeasprigOnEntityTickUpdate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"49\" y=\"8\"><next><block type=\"swim\"><field name=\"speed\">2.5</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
@@ -139,9 +142,18 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 12,
     "mobSpawningType": "waterCreature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
