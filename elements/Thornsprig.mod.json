@@ -101,6 +101,9 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "onMobTickUpdate": {
       "name": "ThornsprigAura"
     },

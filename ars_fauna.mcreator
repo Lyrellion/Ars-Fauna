@@ -1603,7 +1603,7 @@
       "name": "EyebuncleLoot",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "eyebuncle_loot",
       "metadata": {
         "files": [
@@ -1735,8 +1735,8 @@
       "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
       "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
       "item.ars_fauna.seasprig_spawn_egg": "Seasprig Spawn Egg",
-      "entity.ars_fauna.frostbuncle": "Frostbuncle",
       "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
+      "entity.ars_fauna.frostbuncle": "Frostbuncle",
       "item.ars_fauna.skelebuncle_spawn_egg": "Skelebuncle Spawn Egg",
       "item.ars_fauna.enderbuncle_spawn_egg": "Enderbuncle Spawn Egg",
       "item.ars_fauna.seabuncle_spawn_egg": "Seabuncle Spawn Egg",
@@ -1744,8 +1744,8 @@
       "item.ars_fauna.faebuncle_spawn_egg": "Faebuncle Spawn Egg",
       "entity.ars_fauna.songbuncle": "Songbuncle",
       "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
-      "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
       "entity.ars_fauna.tentabuncle": "Tentabuncle",
+      "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
       "entity.ars_fauna.seabuncle": "Seabuncle",
       "item.ars_fauna.frostbuncle_spawn_egg": "Frostbuncle Spawn Egg",
       "item.ars_fauna.cloudbuncle_spawn_egg": "Cloudbuncle Spawn Egg",

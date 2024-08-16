@@ -14,7 +14,7 @@
     },
     "entityDataEntries": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 1.0,
     "modelShadowSize": 0.1,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
@@ -100,6 +100,9 @@
     },
     "stepSound": {
       "value": "entity.slime.squish"
+    },
+    "raidCelebrationSound": {
+      "value": ""
     },
     "onMobTickUpdate": {
       "name": "DropSlimeball"

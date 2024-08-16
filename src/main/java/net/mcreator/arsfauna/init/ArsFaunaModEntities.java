@@ -58,45 +58,45 @@ public class ArsFaunaModEntities {
 	public static final RegistryObject<EntityType<FrostbuncleEntity>> FROSTBUNCLE = register("frostbuncle",
 			EntityType.Builder.<FrostbuncleEntity>of(FrostbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FrostbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<SeabuncleEntity>> SEABUNCLE = register("seabuncle",
 			EntityType.Builder.<SeabuncleEntity>of(SeabuncleEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeabuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<StarbuncleSwarmEntity>> STARBUNCLE_SWARM = register("starbuncle_swarm",
 			EntityType.Builder.<StarbuncleSwarmEntity>of(StarbuncleSwarmEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StarbuncleSwarmEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<EyebuncleEntity>> EYEBUNCLE = register("eyebuncle",
 			EntityType.Builder.<EyebuncleEntity>of(EyebuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EyebuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.2f));
 	public static final RegistryObject<EntityType<PyrobuncleEntity>> PYROBUNCLE = register("pyrobuncle", EntityType.Builder.<PyrobuncleEntity>of(PyrobuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(PyrobuncleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setUpdateInterval(3).setCustomClientFactory(PyrobuncleEntity::new).fireImmune().sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<SandbuncleEntity>> SANDBUNCLE = register("sandbuncle",
 			EntityType.Builder.<SandbuncleEntity>of(SandbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SandbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<ZombuncleEntity>> ZOMBUNCLE = register("zombuncle",
 			EntityType.Builder.<ZombuncleEntity>of(ZombuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZombuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<SculkbuncleEntity>> SCULKBUNCLE = register("sculkbuncle",
 			EntityType.Builder.<SculkbuncleEntity>of(SculkbuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SculkbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<VexbuncleEntity>> VEXBUNCLE = register("vexbuncle",
 			EntityType.Builder.<VexbuncleEntity>of(VexbuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VexbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<SkelebuncleEntity>> SKELEBUNCLE = register("skelebuncle",
 			EntityType.Builder.<SkelebuncleEntity>of(SkelebuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SkelebuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<ShadowbuncleEntity>> SHADOWBUNCLE = register("shadowbuncle", EntityType.Builder.<ShadowbuncleEntity>of(ShadowbuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShadowbuncleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShadowbuncleEntity::new).fireImmune().sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<CloudbuncleEntity>> CLOUDBUNCLE = register("cloudbuncle", EntityType.Builder.<CloudbuncleEntity>of(CloudbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CloudbuncleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CloudbuncleEntity::new).fireImmune().sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<GiantCarnivorousStarbuncleEntity>> GIANT_CARNIVOROUS_STARBUNCLE = register("giant_carnivorous_starbuncle",
 			EntityType.Builder.<GiantCarnivorousStarbuncleEntity>of(GiantCarnivorousStarbuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(GiantCarnivorousStarbuncleEntity::new)
@@ -109,17 +109,17 @@ public class ArsFaunaModEntities {
 	public static final RegistryObject<EntityType<GoobuncleEntity>> GOOBUNCLE = register("goobuncle",
 			EntityType.Builder.<GoobuncleEntity>of(GoobuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoobuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<EnderbuncleEntity>> ENDERBUNCLE = register("enderbuncle", EntityType.Builder.<EnderbuncleEntity>of(EnderbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnderbuncleEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnderbuncleEntity::new).fireImmune().sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<CavebuncleEntity>> CAVEBUNCLE = register("cavebuncle",
 			EntityType.Builder.<CavebuncleEntity>of(CavebuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CavebuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<ShellbuncleEntity>> SHELLBUNCLE = register("shellbuncle",
 			EntityType.Builder.<ShellbuncleEntity>of(ShellbuncleEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShellbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.2f));
 	public static final RegistryObject<EntityType<ShellbuncleTridentEntity>> SHELLBUNCLE_TRIDENT = register("shellbuncle_trident", EntityType.Builder.<ShellbuncleTridentEntity>of(ShellbuncleTridentEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(ShellbuncleTridentEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<DarkDrygmyBoltEntity>> DARK_DRYGMY_BOLT = register("dark_drygmy_bolt",
@@ -127,7 +127,7 @@ public class ArsFaunaModEntities {
 	public static final RegistryObject<EntityType<DarkDrygmyEntity>> DARK_DRYGMY = register("dark_drygmy",
 			EntityType.Builder.<DarkDrygmyEntity>of(DarkDrygmyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DarkDrygmyEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.2f));
 	public static final RegistryObject<EntityType<SculkTriggerEntity>> SCULK_TRIGGER = register("sculk_trigger",
 			EntityType.Builder.<SculkTriggerEntity>of(SculkTriggerEntity::new, MobCategory.MISC).setCustomClientFactory(SculkTriggerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<LaserBeamProjectileEntity>> LASER_BEAM_PROJECTILE = register("laser_beam_projectile", EntityType.Builder.<LaserBeamProjectileEntity>of(LaserBeamProjectileEntity::new, MobCategory.MISC)
@@ -135,27 +135,27 @@ public class ArsFaunaModEntities {
 	public static final RegistryObject<EntityType<SongbuncleEntity>> SONGBUNCLE = register("songbuncle",
 			EntityType.Builder.<SongbuncleEntity>of(SongbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SongbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<ChefbuncleEntity>> CHEFBUNCLE = register("chefbuncle",
 			EntityType.Builder.<ChefbuncleEntity>of(ChefbuncleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChefbuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<TentabuncleEntity>> TENTABUNCLE = register("tentabuncle",
 			EntityType.Builder.<TentabuncleEntity>of(TentabuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TentabuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<IllusibuncleEntity>> ILLUSIBUNCLE = register("illusibuncle",
 			EntityType.Builder.<IllusibuncleEntity>of(IllusibuncleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IllusibuncleEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1.5f));
 	public static final RegistryObject<EntityType<DeepsprigEntity>> DEEPSPRIG = register("deepsprig",
 			EntityType.Builder.<DeepsprigEntity>of(DeepsprigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeepsprigEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<SeasprigEntity>> SEASPRIG = register("seasprig",
 			EntityType.Builder.<SeasprigEntity>of(SeasprigEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeasprigEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<ThornsprigEntity>> THORNSPRIG = register("thornsprig",
 			EntityType.Builder.<ThornsprigEntity>of(ThornsprigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ThornsprigEntity::new)
 

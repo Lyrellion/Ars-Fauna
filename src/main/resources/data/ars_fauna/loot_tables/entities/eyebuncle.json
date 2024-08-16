@@ -39,7 +39,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot",
+          "name": "minecraft:netherite_scrap",
           "weight": 10,
           "functions": [
             {
@@ -90,7 +90,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_sword",
+          "name": "ars_nouveau:enchanters_sword",
           "weight": 100,
           "functions": [
             {
