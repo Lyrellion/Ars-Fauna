@@ -11,6 +11,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.arsfauna.item.FaunaLogoItem;
 import net.mcreator.arsfauna.ArsFaunaMod;
 
 public class ArsFaunaModItems {
@@ -42,6 +43,7 @@ public class ArsFaunaModItems {
 	public static final RegistryObject<Item> SEASPRIG_SPAWN_EGG = REGISTRY.register("seasprig_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.SEASPRIG, -16724788, -39169, new Item.Properties()));
 	public static final RegistryObject<Item> THORNSPRIG_SPAWN_EGG = REGISTRY.register("thornsprig_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.THORNSPRIG, -16751104, -13421824, new Item.Properties()));
 	public static final RegistryObject<Item> FAEBUNCLE_SPAWN_EGG = REGISTRY.register("faebuncle_spawn_egg", () -> new ForgeSpawnEggItem(ArsFaunaModEntities.FAEBUNCLE, -3407668, -16724788, new Item.Properties()));
+	public static final RegistryObject<Item> FAUNA_LOGO = REGISTRY.register("fauna_logo", () -> new FaunaLogoItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
