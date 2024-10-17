@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
+import net.mcreator.arsfauna.ArsFaunaMod;
 import org.jetbrains.annotations.NotNull;
 
 @Mod.EventBusSubscriber
@@ -32,7 +33,7 @@ public class ThornsprigSpawnProcedure {
 			return;
 		}
 
-		if (blockstate.is(BlockTags.LOGS)) {
+		if (blockstate.is(BlockTags.LOGS) && event.getWorld().getGameRules().getBoolean(ArsFaunaMod.thornsprigSpawning)) {
 			if (world.getRandom().nextInt(100) == 0) {
 				Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
