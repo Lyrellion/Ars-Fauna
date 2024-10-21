@@ -1,5 +1,6 @@
 package net.mcreator.arsfauna;
 
+import net.mcreator.arsfauna.init.*;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -16,11 +17,6 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
-
-import net.mcreator.arsfauna.init.ArsFaunaModTabs;
-import net.mcreator.arsfauna.init.ArsFaunaModParticleTypes;
-import net.mcreator.arsfauna.init.ArsFaunaModItems;
-import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,6 +38,7 @@ public class ArsFaunaMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		bus.register(new ArsFaunaModGamerules());
 		ArsFaunaModItems.REGISTRY.register(bus);
 		ArsFaunaModEntities.REGISTRY.register(bus);
 
