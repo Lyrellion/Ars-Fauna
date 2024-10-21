@@ -1,20 +1,17 @@
 package net.mcreator.arsfauna.procedures;
 
+import net.mcreator.arsfauna.init.ArsFaunaModGamerules;
 import net.minecraftforge.common.util.FakePlayer;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
@@ -33,7 +30,7 @@ public class ThornsprigSpawnProcedure {
 		}
 
 		if (blockstate.is(BlockTags.LOGS)) {
-			if (world.getRandom().nextInt(100) == 0) {
+			if (world.getRandom().nextInt(100) < level.getGameRules().getInt(ArsFaunaModGamerules.RULE_THORNSPRIG_SPAWN_CHANCE)) {
 				Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
