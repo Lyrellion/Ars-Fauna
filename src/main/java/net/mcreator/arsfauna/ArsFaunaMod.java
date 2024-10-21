@@ -16,9 +16,6 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.GameRules.BooleanValue;
-import net.minecraft.world.level.GameRules.Key;
 
 import net.mcreator.arsfauna.init.ArsFaunaModTabs;
 import net.mcreator.arsfauna.init.ArsFaunaModParticleTypes;
@@ -39,8 +36,6 @@ public class ArsFaunaMod {
 	public static final Logger LOGGER = LogManager.getLogger(ArsFaunaMod.class);
 	public static final String MODID = "ars_fauna";
 
-	public static Key<BooleanValue> thornsprigSpawning;
-
 	public ArsFaunaMod() {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
@@ -53,8 +48,6 @@ public class ArsFaunaMod {
 		ArsFaunaModTabs.REGISTRY.register(bus);
 
 		ArsFaunaModParticleTypes.REGISTRY.register(bus);
-
-		thornsprigSpawning = GameRuleFactory.createBoolean("thornsprigSpawning", true, GameRules.Category.MOBS);
 
 		// Start of user code block mod init
 		// End of user code block mod init
