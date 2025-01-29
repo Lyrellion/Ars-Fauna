@@ -1,8 +1,8 @@
 package net.mcreator.arsfauna.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.mcreator.arsfauna.entity.ZombuncleEntity;
 import net.mcreator.arsfauna.entity.VexbuncleEntity;
@@ -31,10 +31,10 @@ import net.mcreator.arsfauna.entity.CloudbuncleEntity;
 import net.mcreator.arsfauna.entity.ChefbuncleEntity;
 import net.mcreator.arsfauna.entity.CavebuncleEntity;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class EntityAnimationFactory {
 	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+	public static void onEntityTick(EntityTickEvent.Pre event) {
 		if (event != null && event.getEntity() != null) {
 			if (event.getEntity() instanceof FrostbuncleEntity syncable) {
 				String animation = syncable.getSyncedAnimation();

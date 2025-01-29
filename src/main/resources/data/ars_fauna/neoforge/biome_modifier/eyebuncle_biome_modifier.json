@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "spawners": {
+    "type": "ars_fauna:eyebuncle",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

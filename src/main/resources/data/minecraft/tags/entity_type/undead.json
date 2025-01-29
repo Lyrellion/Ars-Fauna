@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ars_fauna:shadowbuncle",
+    "ars_fauna:skelebuncle",
+    "ars_fauna:vexbuncle",
+    "ars_fauna:zombuncle"
+  ]
+}

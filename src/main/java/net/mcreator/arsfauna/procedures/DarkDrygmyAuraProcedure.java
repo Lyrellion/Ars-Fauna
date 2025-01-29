@@ -11,7 +11,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
@@ -61,7 +60,7 @@ public class DarkDrygmyAuraProcedure {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 1);
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 1);
 				if (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 21, 21, 21), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));

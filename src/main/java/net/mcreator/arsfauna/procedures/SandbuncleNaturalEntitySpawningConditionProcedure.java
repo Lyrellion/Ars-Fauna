@@ -11,7 +11,7 @@ import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 public class SandbuncleNaturalEntitySpawningConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("desert"))) {
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("desert"))) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = ArsFaunaModEntities.SANDBUNCLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {

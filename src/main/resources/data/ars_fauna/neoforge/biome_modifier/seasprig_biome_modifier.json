@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "river",
+    "deep_lukewarm_ocean",
+    "deep_ocean",
+    "lukewarm_ocean",
+    "ocean",
+    "warm_ocean"
+  ],
+  "spawners": {
+    "type": "ars_fauna:seasprig",
+    "weight": 6,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

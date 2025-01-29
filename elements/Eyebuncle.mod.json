@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 73,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Eyebuncle",
@@ -30,6 +30,7 @@
     "creativeTab": {
       "value": "MISC"
     },
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -142,6 +143,7 @@
     "rangedAttackInterval": 50,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
+    "attackRate": 7,
     "raidSpawnsCount": [
       4,
       3,

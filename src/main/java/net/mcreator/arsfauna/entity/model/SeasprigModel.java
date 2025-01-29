@@ -2,9 +2,9 @@ package net.mcreator.arsfauna.entity.model;
 
 import software.bernie.geckolib.model.data.EntityModelData;
 import software.bernie.geckolib.model.GeoModel;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.animation.AnimationState;
 
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
@@ -14,22 +14,22 @@ import net.mcreator.arsfauna.entity.SeasprigEntity;
 public class SeasprigModel extends GeoModel<SeasprigEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(SeasprigEntity entity) {
-		return new ResourceLocation("ars_fauna", "animations/seasprig.animation.json");
+		return ResourceLocation.parse("ars_fauna:animations/seasprig.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(SeasprigEntity entity) {
-		return new ResourceLocation("ars_fauna", "geo/seasprig.geo.json");
+		return ResourceLocation.parse("ars_fauna:geo/seasprig.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(SeasprigEntity entity) {
-		return new ResourceLocation("ars_fauna", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.parse("ars_fauna:textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override
 	public void setCustomAnimations(SeasprigEntity animatable, long instanceId, AnimationState animationState) {
-		CoreGeoBone head = getAnimationProcessor().getBone("head");
+		GeoBone head = getAnimationProcessor().getBone("head");
 		if (head != null) {
 			EntityModelData entityData = (EntityModelData) animationState.getData(DataTickets.ENTITY_MODEL_DATA);
 			head.setRotX(entityData.headPitch() * Mth.DEG_TO_RAD);

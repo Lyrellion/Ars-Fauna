@@ -13,7 +13,7 @@ public class BurnOnEntityTickUpdateProcedure {
 			if (entity.getPersistentData().getDouble("counter1") % 5 == 0) {
 				if (!(world.getLevelData().isRaining() || world.getLevelData().isThundering())) {
 					if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-						entity.setSecondsOnFire(3);
+						entity.igniteForSeconds(3);
 					}
 				}
 			}

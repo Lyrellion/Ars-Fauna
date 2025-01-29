@@ -2,17 +2,15 @@
 package net.mcreator.arsfauna.entity;
 
 import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.GeoEntity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
@@ -23,10 +21,9 @@ import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
@@ -38,9 +35,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
@@ -54,23 +50,18 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public FaebuncleEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(ArsFaunaModEntities.FAEBUNCLE.get(), world);
-	}
-
 	public FaebuncleEntity(EntityType<FaebuncleEntity> type, Level world) {
 		super(type, world);
 		xpReward = 1;
 		setNoAi(false);
-		setMaxUpStep(3f);
 	}
 
 	@Override
-	protected void defineSynchedData() {
-		super.defineSynchedData();
-		this.entityData.define(SHOOT, false);
-		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "faebuncle");
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(SHOOT, false);
+		builder.define(ANIMATION, "undefined");
+		builder.define(TEXTURE, "faebuncle");
 	}
 
 	public void setTexture(String texture) {
@@ -79,11 +70,6 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 
 	public String getTexture() {
 		return this.entityData.get(TEXTURE);
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
 	@Override
@@ -96,18 +82,13 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 	}
 
 	@Override
-	public MobType getMobType() {
-		return MobType.UNDEFINED;
-	}
-
-	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	@Override
@@ -120,11 +101,14 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 			return false;
 		if (source.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (source.is(DamageTypes.WITHER))
-			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (source.is(DamageTypes.WITHER) || source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	@Override
@@ -147,8 +131,8 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 	}
 
 	@Override
-	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+	public EntityDimensions getDefaultDimensions(Pose pose) {
+		return super.getDefaultDimensions(pose).scale(1f);
 	}
 
 	@Override
@@ -157,9 +141,9 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 		this.updateSwingTime();
 	}
 
-	public static void init() {
-		SpawnPlacements.register(ArsFaunaModEntities.FAEBUNCLE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
+	public static void init(RegisterSpawnPlacementsEvent event) {
+		event.register(ArsFaunaModEntities.FAEBUNCLE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -169,6 +153,7 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.STEP_HEIGHT, 3);
 		return builder;
 	}
 
@@ -208,7 +193,7 @@ public class FaebuncleEntity extends PathfinderMob implements GeoEntity {
 		++this.deathTime;
 		if (this.deathTime == 20) {
 			this.remove(FaebuncleEntity.RemovalReason.KILLED);
-			this.dropExperience();
+			this.dropExperience(this);
 		}
 	}
 

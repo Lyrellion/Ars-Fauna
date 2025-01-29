@@ -9,17 +9,17 @@ import net.mcreator.arsfauna.entity.FaebuncleEntity;
 public class FaebuncleModel extends GeoModel<FaebuncleEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(FaebuncleEntity entity) {
-		return new ResourceLocation("ars_fauna", "animations/faebuncle.animation.json");
+		return ResourceLocation.parse("ars_fauna:animations/faebuncle.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FaebuncleEntity entity) {
-		return new ResourceLocation("ars_fauna", "geo/faebuncle.geo.json");
+		return ResourceLocation.parse("ars_fauna:geo/faebuncle.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(FaebuncleEntity entity) {
-		return new ResourceLocation("ars_fauna", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.parse("ars_fauna:textures/entities/" + entity.getTexture() + ".png");
 	}
 
 }

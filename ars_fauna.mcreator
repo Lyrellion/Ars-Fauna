@@ -11,8 +11,8 @@
           "src/main/resources/assets/ars_fauna/models/item/frostbuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/FrostbuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/entity/FrostbuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/frostbuncle_biome_modifier.json",
-          "src/main/java/net/mcreator/arsfauna/client/renderer/FrostbuncleRenderer.java"
+          "src/main/java/net/mcreator/arsfauna/client/renderer/FrostbuncleRenderer.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/frostbuncle_biome_modifier.json"
         ]
       }
     },
@@ -25,7 +25,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/arsfauna/entity/SeabuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/seabuncle_biome_modifier.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/seabuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/SeabuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/client/renderer/SeabuncleRenderer.java",
           "src/main/resources/assets/ars_fauna/models/item/seabuncle_spawn_egg.json"
@@ -42,9 +42,9 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/entity/model/StarbuncleSwarmModel.java",
           "src/main/resources/assets/ars_fauna/models/item/starbuncle_swarm_spawn_egg.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/starbuncle_swarm_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/StarbuncleSwarmRenderer.java",
-          "src/main/java/net/mcreator/arsfauna/entity/StarbuncleSwarmEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/starbuncle_swarm_biome_modifier.json"
+          "src/main/java/net/mcreator/arsfauna/entity/StarbuncleSwarmEntity.java"
         ]
       }
     },
@@ -56,10 +56,10 @@
       "registry_name": "eyebuncle",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/eyebuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/EyebuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/EyebuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/eyebuncle_spawn_egg.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/eyebuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/EyebuncleModel.java"
         ]
       }
@@ -74,8 +74,8 @@
         "files": [
           "src/main/resources/assets/ars_fauna/models/item/pyrobuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/PyrobuncleModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/pyrobuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/PyrobuncleRenderer.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/pyrobuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/PyrobuncleEntity.java"
         ]
       }
@@ -89,7 +89,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ars_fauna/models/item/sandbuncle_spawn_egg.json",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/sandbuncle_biome_modifier.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/sandbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/SandbuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/model/SandbuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/entity/SandbuncleEntity.java"
@@ -108,7 +108,7 @@
           "src/main/java/net/mcreator/arsfauna/entity/ZombuncleEntity.java",
           "src/main/java/net/mcreator/arsfauna/entity/model/ZombuncleModel.java",
           "src/main/resources/assets/ars_fauna/models/item/zombuncle_spawn_egg.json",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/zombuncle_biome_modifier.json"
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/zombuncle_biome_modifier.json"
         ]
       }
     },
@@ -124,7 +124,7 @@
           "src/main/java/net/mcreator/arsfauna/entity/SculkbuncleEntity.java",
           "src/main/java/net/mcreator/arsfauna/entity/model/SculkbuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/client/renderer/SculkbuncleRenderer.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/sculkbuncle_biome_modifier.json"
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/sculkbuncle_biome_modifier.json"
         ]
       }
     },
@@ -136,8 +136,8 @@
       "registry_name": "vexbuncle",
       "metadata": {
         "files": [
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/vexbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/VexbuncleModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/vexbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/VexbuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/vexbuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/VexbuncleRenderer.java"
@@ -154,9 +154,9 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/SkelebuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/SkelebuncleEntity.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/skelebuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/skelebuncle_spawn_egg.json",
-          "src/main/java/net/mcreator/arsfauna/entity/model/SkelebuncleModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/skelebuncle_biome_modifier.json"
+          "src/main/java/net/mcreator/arsfauna/entity/model/SkelebuncleModel.java"
         ]
       }
     },
@@ -170,8 +170,8 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/entity/ShadowbuncleEntity.java",
           "src/main/java/net/mcreator/arsfauna/client/renderer/ShadowbuncleRenderer.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/shadowbuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/shadowbuncle_spawn_egg.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/shadowbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/ShadowbuncleModel.java"
         ]
       }
@@ -186,7 +186,7 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/CloudbuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/model/CloudbuncleModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/cloudbuncle_biome_modifier.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/cloudbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/CloudbuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/cloudbuncle_spawn_egg.json"
         ]
@@ -200,9 +200,9 @@
       "registry_name": "giant_carnivorous_starbuncle",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/giant_carnivorous_starbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/GiantCarnivorousStarbuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/giant_carnivorous_starbuncle_spawn_egg.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/giant_carnivorous_starbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/GiantCarnivorousStarbuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/client/renderer/GiantCarnivorousStarbuncleRenderer.java"
         ]
@@ -315,9 +315,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/GoobuncleRenderer.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/goobuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/GoobuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/entity/GoobuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/goobuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/goobuncle_spawn_egg.json"
         ]
       }
@@ -558,8 +558,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/arsfauna/entity/model/EnderbuncleModel.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/enderbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/EnderbuncleRenderer.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/enderbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/EnderbuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/enderbuncle_spawn_egg.json"
         ]
@@ -676,7 +676,7 @@
           "src/main/java/net/mcreator/arsfauna/entity/model/CavebuncleModel.java",
           "src/main/java/net/mcreator/arsfauna/entity/CavebuncleEntity.java",
           "src/main/resources/assets/ars_fauna/models/item/cavebuncle_spawn_egg.json",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/cavebuncle_biome_modifier.json"
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/cavebuncle_biome_modifier.json"
         ]
       }
     },
@@ -689,9 +689,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/arsfauna/entity/ShellbuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/shellbuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/shellbuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/ShellbuncleModel.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/shellbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/ShellbuncleRenderer.java"
         ]
       }
@@ -786,8 +786,8 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/DarkDrygmyRenderer.java",
           "src/main/resources/assets/ars_fauna/models/item/dark_drygmy_spawn_egg.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/dark_drygmy_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/DarkDrygmyModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/dark_drygmy_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/DarkDrygmyEntity.java"
         ]
       }
@@ -1052,16 +1052,6 @@
       }
     },
     {
-      "name": "LaserBeamParticle",
-      "type": "particlemodel",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "laser_beam_particle",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "DarkDrygmyAura",
       "type": "procedure",
       "compiles": true,
@@ -1135,8 +1125,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/SongbuncleRenderer.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/songbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/SongbuncleModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/songbuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/songbuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/SongbuncleEntity.java"
         ]
@@ -1152,8 +1142,8 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/ChefbuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/ChefbuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/chefbuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/ChefbuncleModel.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/chefbuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/chefbuncle_spawn_egg.json"
         ]
       }
@@ -1268,7 +1258,7 @@
         "files": [
           "src/main/java/net/mcreator/arsfauna/client/renderer/TentabuncleRenderer.java",
           "src/main/java/net/mcreator/arsfauna/entity/TentabuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/tentabuncle_biome_modifier.json",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/tentabuncle_biome_modifier.json",
           "src/main/resources/assets/ars_fauna/models/item/tentabuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/TentabuncleModel.java"
         ]
@@ -1284,9 +1274,9 @@
         "files": [
           "src/main/resources/assets/ars_fauna/models/item/illusibuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/IllusibuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/illusibuncle_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/IllusibuncleRenderer.java",
-          "src/main/java/net/mcreator/arsfauna/entity/model/IllusibuncleModel.java"
+          "src/main/java/net/mcreator/arsfauna/entity/model/IllusibuncleModel.java",
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/illusibuncle_biome_modifier.json"
         ]
       }
     },
@@ -1301,8 +1291,8 @@
           "src/main/resources/assets/ars_fauna/models/item/deepsprig_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/DeepsprigModel.java",
           "src/main/java/net/mcreator/arsfauna/entity/DeepsprigEntity.java",
-          "src/main/java/net/mcreator/arsfauna/client/renderer/DeepsprigRenderer.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/deepsprig_biome_modifier.json"
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/deepsprig_biome_modifier.json",
+          "src/main/java/net/mcreator/arsfauna/client/renderer/DeepsprigRenderer.java"
         ]
       }
     },
@@ -1314,10 +1304,10 @@
       "registry_name": "seasprig",
       "metadata": {
         "files": [
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/seasprig_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/client/renderer/SeasprigRenderer.java",
           "src/main/resources/assets/ars_fauna/models/item/seasprig_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/model/SeasprigModel.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/seasprig_biome_modifier.json",
           "src/main/java/net/mcreator/arsfauna/entity/SeasprigEntity.java"
         ]
       }
@@ -1351,10 +1341,6 @@
           {
             "name": "blockstate",
             "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
           },
           {
             "name": "x",
@@ -1623,7 +1609,7 @@
       "registry_name": "shadowbuncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/shadowbuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/shadowbuncle.json"
         ]
       }
     },
@@ -1635,7 +1621,7 @@
       "registry_name": "dark_drygmy_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/dark_drygmy.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/dark_drygmy.json"
         ]
       }
     },
@@ -1647,7 +1633,7 @@
       "registry_name": "illusibuncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/illusibuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/illusibuncle.json"
         ]
       }
     },
@@ -1659,7 +1645,7 @@
       "registry_name": "gc_buncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/giant_carnivorous_starbuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/giant_carnivorous_starbuncle.json"
         ]
       }
     },
@@ -1675,7 +1661,7 @@
           "src/main/java/net/mcreator/arsfauna/entity/model/FaebuncleModel.java",
           "src/main/resources/assets/ars_fauna/models/item/faebuncle_spawn_egg.json",
           "src/main/java/net/mcreator/arsfauna/entity/FaebuncleEntity.java",
-          "src/main/resources/data/ars_fauna/forge/biome_modifier/faebuncle_biome_modifier.json"
+          "src/main/resources/data/ars_fauna/neoforge/biome_modifier/faebuncle_biome_modifier.json"
         ]
       }
     },
@@ -1687,7 +1673,7 @@
       "registry_name": "skelebuncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/skelebuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/skelebuncle.json"
         ]
       }
     },
@@ -1699,7 +1685,7 @@
       "registry_name": "frostbuncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/frostbuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/frostbuncle.json"
         ]
       }
     },
@@ -1711,7 +1697,7 @@
       "registry_name": "zombuncle_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/ars_fauna/loot_tables/entities/zombuncle.json"
+          "src/main/resources/data/ars_fauna/loot_table/entities/zombuncle.json"
         ]
       }
     },
@@ -1743,7 +1729,14 @@
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:Shadowbuncle",
+      "~CUSTOM:Skelebuncle",
+      "~CUSTOM:Vexbuncle",
+      "~CUSTOM:Zombuncle"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
@@ -1752,8 +1745,8 @@
       "entity.ars_fauna.sculkbuncle": "Sculkbuncle",
       "entity.ars_fauna.shadowbuncle": "Shadowbuncle",
       "item.ars_fauna.seasprig_spawn_egg": "Seasprig Spawn Egg",
-      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
       "entity.ars_fauna.frostbuncle": "Frostbuncle",
+      "item.ars_fauna.pyrobuncle_spawn_egg": "Pyrobuncle Spawn Egg",
       "item.ars_fauna.skelebuncle_spawn_egg": "Skelebuncle Spawn Egg",
       "item.ars_fauna.enderbuncle_spawn_egg": "Enderbuncle Spawn Egg",
       "item.ars_fauna.seabuncle_spawn_egg": "Seabuncle Spawn Egg",
@@ -1761,8 +1754,8 @@
       "item.ars_fauna.faebuncle_spawn_egg": "Faebuncle Spawn Egg",
       "entity.ars_fauna.songbuncle": "Songbuncle",
       "item.ars_fauna.songbuncle_spawn_egg": "Songbuncle Spawn Egg",
-      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "item.ars_fauna.zombuncle_spawn_egg": "Zombuncle Spawn Egg",
+      "entity.ars_fauna.tentabuncle": "Tentabuncle",
       "entity.ars_fauna.seabuncle": "Seabuncle",
       "item.ars_fauna.fauna_logo": "Fauna Logo",
       "item.ars_fauna.frostbuncle_spawn_egg": "Frostbuncle Spawn Egg",
@@ -1820,9 +1813,9 @@
     "mcreatorDependencies": [
       "geckolib"
     ],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.arsfauna"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400452410
 }
