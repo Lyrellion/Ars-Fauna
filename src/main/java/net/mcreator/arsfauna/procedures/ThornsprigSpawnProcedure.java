@@ -1,5 +1,7 @@
 package net.mcreator.arsfauna.procedures;
 
+import net.mcreator.arsfauna.init.ArsFaunaModGamerules;
+import net.minecraft.client.gui.screens.worldselection.WorldCreationUiState;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -33,7 +35,8 @@ public class ThornsprigSpawnProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
-			if (Mth.nextInt(RandomSource.create(), 1, 100) == 100) {
+			WorldCreationUiState level = null;
+			if (Mth.nextInt(RandomSource.create(), 1, 100) <level.getGameRules().getInt(ArsFaunaModGamerules.RULE_THORNSPRIG_SPAWN_CHANCE)) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {

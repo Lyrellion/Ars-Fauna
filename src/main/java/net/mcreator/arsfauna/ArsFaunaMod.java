@@ -18,10 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.arsfauna.init.ArsFaunaModTabs;
-import net.mcreator.arsfauna.init.ArsFaunaModParticleTypes;
-import net.mcreator.arsfauna.init.ArsFaunaModItems;
-import net.mcreator.arsfauna.init.ArsFaunaModEntities;
+import net.mcreator.arsfauna.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
