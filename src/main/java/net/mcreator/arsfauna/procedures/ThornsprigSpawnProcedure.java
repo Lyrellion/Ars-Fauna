@@ -35,12 +35,11 @@ public class ThornsprigSpawnProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
-			WorldCreationUiState level = null;
-			if (Mth.nextInt(RandomSource.create(), 1, 100) <level.getGameRules().getInt(ArsFaunaModGamerules.RULE_THORNSPRIG_SPAWN_CHANCE)) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+			if (world instanceof ServerLevel level) {
+				if (Mth.nextInt(RandomSource.create(), 1, 100) < level.getGameRules().getInt(ArsFaunaModGamerules.RULE_THORNSPRIG_SPAWN_CHANCE)) {
+					Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+						entityToSpawn.setYRot(level.getRandom().nextFloat() * 360F);
 					}
 				}
 			}
