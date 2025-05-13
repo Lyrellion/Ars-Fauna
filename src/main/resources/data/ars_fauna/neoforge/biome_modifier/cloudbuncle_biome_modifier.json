@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "neoforge:is_mountain",
+  "biomes": "minecraft:is_mountain",
   "spawners": {
     "type": "ars_fauna:cloudbuncle",
     "weight": 5,
