@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "desert",
+"biomes": "#minecraft:is_desert",
   "spawners": {
     "type": "ars_fauna:sandbuncle",
     "weight": 5,

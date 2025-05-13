@@ -13,7 +13,7 @@ import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 public class EnderbuncleNaturalEntitySpawningConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_end")))) {
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:end")))) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = ArsFaunaModEntities.ENDERBUNCLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {

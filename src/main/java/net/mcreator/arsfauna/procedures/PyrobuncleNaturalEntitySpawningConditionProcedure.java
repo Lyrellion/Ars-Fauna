@@ -17,7 +17,7 @@ public class PyrobuncleNaturalEntitySpawningConditionProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_badlands")))) {
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:badlands")))) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = ArsFaunaModEntities.PYROBUNCLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
@@ -25,7 +25,7 @@ public class PyrobuncleNaturalEntitySpawningConditionProcedure {
 				}
 			}
 			return true;
-		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_savanna")))) {
+		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:savanna")))) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = ArsFaunaModEntities.PYROBUNCLE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {

@@ -1808,7 +1808,13 @@
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
     "requiredMods": [],
-    "dependencies": [],
+    "dependencies": [
+       "com.hollingsworth.ars_nouveau:ars_nouveau-${minecraft_version}:${ars_version}")
+       "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+       "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+       "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+       "com.alexthw.ars_elemental:ars_elemental"
+    ],
     "dependants": [],
     "mcreatorDependencies": [
       "geckolib"

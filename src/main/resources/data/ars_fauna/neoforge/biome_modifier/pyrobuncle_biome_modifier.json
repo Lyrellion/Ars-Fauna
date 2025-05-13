@@ -1,12 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": [
-    "badlands",
-    "desert",
-    "eroded_badlands",
-    "savanna",
-    "savanna_plateau"
-  ],
+  "biomes": "#minecraft:is_hot_overworld",
   "spawners": {
     "type": "ars_fauna:pyrobuncle",
     "weight": 5,

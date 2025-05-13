@@ -1,14 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": [
-    "frozen_peaks",
-    "frozen_river",
-    "ice_spikes",
-    "snowy_slopes",
-    "snowy_beach",
-    "snowy_plains",
-    "snowy_taiga"
-  ],
+  "biomes": "#minecraft:is_cold_overworld",
   "spawners": {
     "type": "ars_fauna:frostbuncle",
     "weight": 5,
