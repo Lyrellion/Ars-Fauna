@@ -14,7 +14,7 @@ public class ConvertToMyceliumProcedure {
 		entity.getPersistentData().putDouble("funguscounter", (entity.getPersistentData().getDouble("funguscounter") + 1));
 		if (entity.getPersistentData().getDouble("funguscounter") % 2400 == 0) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CAVE_AIR) {
-				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("forge:stone")))
+				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:stone")))
 						|| (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:dirt")))) {
 					world.setBlock(BlockPos.containing(x, y - 1, z), Blocks.MYCELIUM.defaultBlockState(), 3);
 				}

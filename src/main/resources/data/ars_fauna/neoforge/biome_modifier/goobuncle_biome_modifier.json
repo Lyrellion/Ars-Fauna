@@ -1,8 +1,8 @@
 {
   "type": "neoforge:add_spawns",
   "biomes": [
-    "mangrove_swamp",
-    "swamp"
+    "swamp",
+    "mangrove_swamp"
   ],
   "spawners": {
     "type": "ars_fauna:goobuncle",
