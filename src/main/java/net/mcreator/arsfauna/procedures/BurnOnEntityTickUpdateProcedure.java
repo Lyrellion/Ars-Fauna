@@ -9,7 +9,8 @@ public class BurnOnEntityTickUpdateProcedure {
 		if (entity == null)
 			return;
 		if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y + 1, z)) > 13) {
-			entity.igniteForSeconds(5);
+			entity.setSecondsOnFire(5);
 		}
 	}
 }
+
