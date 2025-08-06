@@ -1,23 +1,19 @@
 package net.mcreator.arsfauna.procedures;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.LightLayer;
 
 public class BurnOnEntityTickUpdateProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return false;
-		if (world.dayTime() < 12000) {
-			entity.getPersistentData().putDouble("counter1", (entity.getPersistentData().getDouble("counter1") + 1));
-			if (entity.getPersistentData().getDouble("counter1") % 5 == 0) {
-				if (!(world.getLevelData().isRaining() || world.getLevelData().isThundering())) {
-					if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-						entity.igniteForSeconds(3);
-					}
-				}
+			return;
+		if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+			if (world instanceof Level _lvl1 && _lvl1.isDay() && !world.getLevelData().isRaining()) {
+				entity.igniteForSeconds(5);
 			}
 		}
-		return false;
 	}
 }

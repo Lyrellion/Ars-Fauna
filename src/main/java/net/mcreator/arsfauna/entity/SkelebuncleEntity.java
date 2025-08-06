@@ -142,8 +142,9 @@ public class SkelebuncleEntity extends Monster implements GeoEntity {
 	public void baseTick() {
 		super.baseTick();
 		BurnOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
-		this.refreshDimensions();
 	}
+
+
 
 	@Override
 	public EntityDimensions getDefaultDimensions(Pose pose) {

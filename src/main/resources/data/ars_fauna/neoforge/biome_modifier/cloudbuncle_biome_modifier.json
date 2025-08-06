@@ -1,6 +1,11 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "neoforge:is_mountain",
+  "biomes": [
+    "snowy_slopes",
+    "stony_peaks",
+    "jagged_peaks",
+    "frozen_peaks"
+  ],
   "spawners": {
     "type": "ars_fauna:cloudbuncle",
     "weight": 5,

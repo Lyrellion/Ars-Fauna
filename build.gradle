@@ -3,13 +3,13 @@ plugins {
     id 'net.neoforged.moddev' version '1.0.21'
 }
 
-version = '1.0'
-base.archivesName = "modid"
+version = '1.4'
+base.archivesName = "Ars Fauna"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.65"
+    version = "21.1.187"
 
     runs {
         client {
