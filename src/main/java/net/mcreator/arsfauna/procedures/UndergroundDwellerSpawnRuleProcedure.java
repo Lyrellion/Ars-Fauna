@@ -10,8 +10,9 @@ public class UndergroundDwellerSpawnRuleProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld")))) {
 			if (y < 50 && !world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("deep_dark"))) {
-				return true;
+				if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) < 7) return true;
 			}
+			return false;
 		}
 		return false;
 	}

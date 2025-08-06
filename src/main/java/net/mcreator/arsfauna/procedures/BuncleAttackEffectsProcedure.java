@@ -49,9 +49,9 @@ public class BuncleAttackEffectsProcedure {
 			return false;
 		double particleRadius = 0;
 		double particleAmount = 0;
-		if (immediatesourceentity instanceof StarbuncleSwarmEntity && entity instanceof Player) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.GOLD_NUGGET)) : false) {
-				if (immediatesourceentity.getPersistentData().getBoolean("robber") == false) {
+		if (immediatesourceentity instanceof StarbuncleSwarmEntity && entity instanceof Player playerHasItem) {
+			if (playerHasItem.getInventory().contains(new ItemStack(Items.GOLD_NUGGET))) {
+				if (!immediatesourceentity.getPersistentData().getBoolean("robber")) {
 					entity.getPersistentData().putDouble("lottery", (Mth.nextDouble(RandomSource.create(), 1, 20)));
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(Items.GOLD_NUGGET);

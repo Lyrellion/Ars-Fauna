@@ -1,6 +1,6 @@
-package net.mcreator.arsfauna.procedures;
+//package net.mcreator.arsfauna.procedures;
 
-import net.mcreator.arsfauna.init.ArsFaunaModGamerules;
+//import net.mcreator.arsfauna.init.ArsFaunaModGamerules;
 import net.minecraft.client.gui.screens.worldselection.WorldCreationUiState;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -22,9 +22,9 @@ import net.mcreator.arsfauna.init.ArsFaunaModEntities;
 
 import javax.annotation.Nullable;
 
-// @EventBusSubscriber
-// public class ThornsprigSpawnProcedure {
-// 	@SubscribeEvent
+//@EventBusSubscriber
+//public class ThornsprigSpawnProcedure {
+//	@SubscribeEvent
 //	public static void onBlockBreak(BlockEvent.BreakEvent event) {
 //		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState());
 //	}
@@ -37,7 +37,7 @@ import javax.annotation.Nullable;
 //		if (blockstate.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
 //			if (world instanceof ServerLevel level) {
 //				if (Mth.nextInt(RandomSource.create(), 1, 100) < level.getGameRules().getInt(ArsFaunaModGamerules.RULE_THORNSPRIG_SPAWN_CHANCE)) {
-//Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+//					Entity entityToSpawn = ArsFaunaModEntities.THORNSPRIG.get().spawn(level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 //					if (entityToSpawn != null) {
 //						entityToSpawn.setYRot(level.getRandom().nextFloat() * 360F);
 //					}
